@@ -1,0 +1,122 @@
+### Copyright 2004-2005 Gentoo Foundation
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title><TMPL_VAR name></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+<link rel="stylesheet" href="planet.css" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="<TMPL_VAR name ESCAPE="HTML">" href="rss20.xml">
+</head>
+
+<body>
+<table cellpadding="0" cellspacing="0" width="100%" border="0">
+<tbody><tr>
+
+### Gentoo logo
+<td class="logobox">
+<a href="http://www.gentoo.org/"><img alt="Gentoo Logo" src="images/gtop-s.jpg" width="193" height="88"></a><br>
+<a href="http://www.gentoo.org/"><img alt="Gentoo Logo Side" src="images/gbot-s.gif" width="193" height="31"></a>
+</td>
+
+### Links across top
+<td class="linkbar">
+<div class="menu">
+<a href="http://www.gentoo.org/main/en/about.xml" class="menulink">About</a> |
+          <a href="http://www.gentoo.org/proj/en/metastructure/projects.xml?showlevel=1" class="menulink">Projects</a> |
+          <a href="http://www.gentoo.org/main/en/philosophy.xml" class="menulink">Philosophy</a> |
+          <a href="http://www.gentoo.org/doc/en/index.xml" class="menulink">Docs</a> |
+          <a href="http://forums.gentoo.org/" class="menulink">Forums</a> |
+          <a href="http://www.gentoo.org/main/en/lists.xml" class="menulink">Lists</a> |
+          <a href="http://bugs.gentoo.org/" class="menulink">Bugs</a> |
+          <a href="http://www.cafepress.com/officialgentoo/" class="menulink">Store</a> |
+          <a href="http://www.gentoo.org/news/en/gwn/gwn.xml" class="menulink"> GWN</a> |
+          <a href="http://www.gentoo.org/main/en/where.xml" class="menulink">Get Gentoo!</a> |
+          <a href="http://www.gentoo.org/main/en/sponsors.xml" class="menulink">Sponsors</a>
+</div></td>
+
+
+</tr>
+<tr>
+
+### Subscriptions list down left menu
+<td class="leftmenu">
+<img alt="Gentoo Spaceship" src="images/gridtest.gif" align="right" height="96" width="132"><br clear="all"><br>
+
+<div class="altmenu"><b>Contributors:</b><br>
+<TMPL_LOOP Channels>
+. <a class="altlink" href="<TMPL_VAR link ESCAPE="HTML">" title="<TMPL_VAR title ESCAPE="HTML">"><TMPL_VAR name></a><br>
+</TMPL_LOOP>
+
+<br><b>Last updated:</b><br>
+<TMPL_VAR date>
+
+<br><br><b>Disclaimer:</b><br>
+Views expressed in the content published here do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
+
+<br><br><div align="center">
+<a href="rss20.xml">
+<img src="http://planet.gentoo.org/images/rss20.png" border="0" alt="Syndicate this Planet">
+</a><br>
+<a href="opml.xml">
+<img src="http://planet.gentoo.org/images/opml.png" border="0" alt="Blogroll">
+</a><br>
+</div>
+
+<br>Bugs? Comments? Suggestions? Contact us:
+<a href="mailto:user-relations@gentoo.org">user-relations@gentoo.org</a>
+
+<br><br><b>Powered by:</b><br>
+<a href="http://www.planetplanet.org/">Planet</a>
+
+</div>
+</td>
+
+### The actual blog entries
+<td class="content">
+
+<div id="intro">
+<img src="http://planet.gentoo.org/images/gentoo.gif"><p><TMPL_VAR description></p>
+</div>
+
+<TMPL_LOOP Items>
+<TMPL_IF new_date><div class="dateheading"><TMPL_VAR new_date></div></TMPL_IF>
+
+<TMPL_IF new_channel>
+<div class="personheading">
+<span class="personheading">
+<a href="<TMPL_VAR channel_link ESCAPE="HTML">" title="<TMPL_VAR channel_title ESCAPE="HTML">"><TMPL_VAR channel_name></a>
+</span>
+a.k.a. <b><TMPL_VAR channel_username></b>
+(<a href="http://dev.gentoo.org/~<TMPL_VAR channel_username ESCAPE="HTML">/">homepage</a>,
+<a href="http://cia.navi.cx/stats/author/<TMPL_VAR channel_username ESCAPE="HTML">">stats</a>,
+<a href="http://bugs.gentoo.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=<TMPL_VAR channel_username ESCAPE="HTML">%40gentoo.org&amp;emailtype1=exact&amp;emailassigned_to1=1&amp;emailreporter1=1">bugs</a>)
+</div>
+</TMPL_IF>
+
+<TMPL_IF title>
+<div class="entryheading">
+<span class="entryheading"><a href="<TMPL_VAR link ESCAPE="HTML">"><TMPL_VAR title></a></span> (<TMPL_VAR date>)
+</div>
+</TMPL_IF>
+
+<div class="entrycontent"><p>
+<TMPL_VAR content>
+</p></div>
+
+<TMPL_IF comments>
+<p>
+<TMPL_VAR comments>
+</p>
+</TMPL_IF>
+
+</TMPL_LOOP>
+
+</td></tr>
+
+### Copyright notice
+<tr><td colspan="2" class="footer">
+Gentoo Design, Copyright 2001-2005 Gentoo Foundation, Inc.<br>
+Views expressed in the content shown above do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
+</td></tr>
+</tbody></table></body></html>
