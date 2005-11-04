@@ -89,7 +89,7 @@ Views expressed in the content published here do not necessarily represent the v
 </span>
 a.k.a. <b><TMPL_VAR channel_username></b>
 (<a href="http://dev.gentoo.org/~<TMPL_VAR channel_username ESCAPE="HTML">/">homepage</a>,
-<a href="http://cia.navi.cx/stats/author/<TMPL_VAR channel_username ESCAPE="HTML">">stats</a>,
+<a href="http://cia.navi.cx/stats/author/<TMPL_IF channel_cia_username><TMPL_VAR channel_cia_username ESCAPE="HTML"><TMPL_ELSE><TMPL_VAR channel_username ESCAPE="HTML"></TMPL_IF>">stats</a>,
 <a href="http://bugs.gentoo.org/buglist.cgi?bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;email1=<TMPL_VAR channel_username ESCAPE="HTML">%40gentoo.org&amp;emailtype1=exact&amp;emailassigned_to1=1&amp;emailreporter1=1">bugs</a>)
 </div>
 </TMPL_IF>
