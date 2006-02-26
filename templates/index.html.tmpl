@@ -107,13 +107,15 @@ a.k.a. <b><TMPL_VAR channel_username></b>
 <img class="face" src="images/<TMPL_VAR channel_face ESCAPE="HTML">" width="<TMPL_VAR channel_facewidth ESCAPE="HTML">" height="<TMPL_VAR channel_faceheight ESCAPE="HTML">" alt="<TMPL_VAR channel_name>" align="right">
 </TMPL_IF>
 <TMPL_VAR content>
-</p></div>
-
+</p>
 <TMPL_IF comments>
 <p>
-<TMPL_VAR comments>
+<span class="commentlink">
+<a href="<TMPL_VAR comments ESCAPE="HTML">">Leave a comment</a>
+</span>
 </p>
 </TMPL_IF>
+</div>
 
 </TMPL_LOOP>
 
