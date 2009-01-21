@@ -1,0 +1,4 @@
+[http://gentooexperimental.org/~patrick/weblog/rss.xml]
+name = Patrick Lauer
+username = bonsaikitten
+filter = [Ll]inux|[Gg]entoo|[Cc]omputer|emerge|portage|[Dd]ebian|[Uu]buntu|GNU|kernel|[Uu]nix|[Xx]11|[Xx]org|[Ff]irefox|[Mm]icrosoft|Windows|ISO|GNOME|gnome|KDE|Qt|GTK|ebuild|[Tt]echnology|EAPI|eapi
