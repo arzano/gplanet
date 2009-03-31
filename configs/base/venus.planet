@@ -3,7 +3,7 @@
 # metadata
 name = Planet Gentoo
 link = http://planet.gentoo.org/
-owner_name = Gentoo
+owner_name = Gentoo Foundation
 owner_email = planet@gentoo.org
 description = Welcome to <b>Planet Gentoo</b>, an aggregation of Gentoo-related weblog articles written by Gentoo developers. For a broader range of topics, you might be interested in <a href="http://planet.gentoo.org/universe/">Gentoo Universe</a>.
 
