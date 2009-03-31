@@ -10,7 +10,7 @@ description = Welcome to <b>Planet Gentoo</b>, an aggregation of Gentoo-related 
 # planet
 cache_directory = /var/www/planet.gentoo.org/cache/planet
 log_level = DEBUG
-output_theme = planet_gentoo
+output_theme = /var/www/planet.gentoo.org/venus/themes/planet_gentoo
 output_dir = /var/www/planet.gentoo.org/htdocs
 items_per_page = 50
 days_per_page = 0
