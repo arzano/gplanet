@@ -109,7 +109,7 @@ a.k.a. <b><TMPL_VAR channel_username></b>
 <table width="100%" style="table-layout:fixed"><tr><td>
 <div class="entrycontent"><p>
 <TMPL_IF channel_gravatar>
-<img class="face" src="http://www.gravatar.com/avatar/<TMPL_VAR channel_gravatar ESCAPE="HTML">.jpg?s=100&r=pg&d=http%3A%2F%2Fplanet.gentoo.org%2Fimages%2Ftux.png" alt="" align="right">
+<img class="face" src="http://www.gravatar.com/avatar/<TMPL_VAR channel_gravatar ESCAPE="HTML">.jpg?s=100&r=pg&d=http%3A%2F%2Fplanet.gentoo.org%2Fimages%2F<TMPL_IF channel_face><TMPL_VAR channel_face ESCAPE="HTML"><TMPL_ELSE>tux.png</TMPL_IF>" alt="" align="right">
 </TMPL_IF>
 <TMPL_VAR content>
 </p>
