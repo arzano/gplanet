@@ -1,5 +1,13 @@
 #!/usr/bin/env python
 
+# A simple help script to create a new planet/universe config for a new user
+# Run it inside the planet/ topdir
+# WARNING: Always check the changes that are made by this script before commiting
+# Many thanks to Arfrever Frehtes Taifersar Arahesis (arfrever@gentoo.org) for his suggestions
+
+# Author: Theo Chatzimichos <tampakrap@gentoo.org>
+# Feel free to contact me via IRC or email
+
 import sys
 import hashlib
 
