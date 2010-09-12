@@ -1,0 +1,33 @@
+#!/bin/bash
+DATE=$(date +%F)
+LOG_DATE=$(date +%F-%R)
+BASE_DIR="/var/www/planet.gentoo.org/"
+RESTRICT=""
+VENUS_DIR="/usr/lib/python2.6/site-packages/venus/"
+
+cd ${BASE_DIR}
+
+# Get latest SVN changes
+git pull ${BASE_DIR}/planet-gentoo/configs/ >/dev/null 2>&1
+git pull ${BASE_DIR}/planet-gentoo/templates/ >/dev/null 2>&1
+
+# Run Venus
+for x in planet universe; do
+        if [[ ! -z $RESTRICT ]]; then
+                for y in $RESTRICT; do
+                        rm ${BASE_DIR}configs/${x}/${y}
+                done
+        fi
+        cat ${BASE_DIR}planet-gentoo/configs/base/venus.${x} ${BASE_DIR}planet-gentoo/configs/${x}/* > ${BASE_DIR}generated_configs/venus.${x}.ini
+        python ${VENUS_DIR}planet.py ${BASE_DIR}configs/venus.${x}.ini > ${BASE_DIR}logs/${x}/${LOG_DATE}.log 2>&1
+done
+
+# Delete old logs
+find ${BASE_DIR}logs -type f -mtime +30 -delete
+
+# Archive posts
+cp ${BASE_DIR}htdocs/index.html \
+        ${BASE_DIR}htdocs/archives/${DATE}.html
+cp ${BASE_DIR}htdocs/universe/index.html \
+        ${BASE_DIR}htdocs/universe/archives/${DATE}.html
+
