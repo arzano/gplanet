@@ -20,7 +20,7 @@ for x in planet universe; do
                 done
         fi
         cat ${BASE_DIR}planet-gentoo/configs/base/venus.${x} ${BASE_DIR}planet-gentoo/configs/${x}/* > ${BASE_DIR}generated_configs/venus.${x}.ini
-        python ${VENUS_DIR}planet.py ${BASE_DIR}configs/venus.${x}.ini > ${BASE_DIR}logs/${x}/${LOG_DATE}.log 2>&1
+        python ${VENUS_DIR}planet.py ${BASE_DIR}generated_configs/venus.${x}.ini > ${BASE_DIR}logs/${x}/${LOG_DATE}.log 2>&1
 done
 
 # Delete old logs
