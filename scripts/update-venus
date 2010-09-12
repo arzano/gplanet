@@ -8,14 +8,15 @@ VENUS_DIR="/usr/lib/python2.6/site-packages/venus/"
 cd ${BASE_DIR}
 
 # Get latest SVN changes
-git pull ${BASE_DIR}/planet-gentoo/configs/ >/dev/null 2>&1
-git pull ${BASE_DIR}/planet-gentoo/templates/ >/dev/null 2>&1
+#git pull ${BASE_DIR}/planet-gentoo/configs/ >/dev/null 2>&1
+#git pull ${BASE_DIR}/planet-gentoo/templates/ >/dev/null 2>&1
+git pull ${BASE_DIR}planet-gentoo/ >/dev/null 2>&1
 
 # Run Venus
 for x in planet universe; do
         if [[ ! -z $RESTRICT ]]; then
                 for y in $RESTRICT; do
-                        rm ${BASE_DIR}configs/${x}/${y}
+                        rm ${BASE_DIR}planet-gentoo/configs/${x}/${y}
                 done
         fi
         cat ${BASE_DIR}planet-gentoo/configs/base/venus.${x} ${BASE_DIR}planet-gentoo/configs/${x}/* > ${BASE_DIR}generated_configs/venus.${x}.ini

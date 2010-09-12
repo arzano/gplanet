@@ -10,7 +10,7 @@ description = Welcome to <b>Gentoo Universe</b>, an aggregation of weblog articl
 # planet
 cache_directory = /var/www/planet.gentoo.org/cache/universe
 log_level = DEBUG
-output_theme = /var/www/planet.gentoo.org/venus/themes/planet_gentoo
+output_theme = /var/www/planet.gentoo.org/planet-gentoo/universe
 output_dir = /var/www/planet.gentoo.org/htdocs/universe
 items_per_page = 50
 days_per_page = 0
