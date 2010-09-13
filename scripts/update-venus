@@ -38,7 +38,7 @@ find ${BASE_DIR}logs -type f -mtime +30 -delete
 
 # Archive posts
 cp ${BASE_DIR}htdocs/index.html \
-        ${BASE_DIR}htdocs/archives/${DATE}.html
+        ${BASE_DIR}htdocs/archives/$(date +%G)/${DATE}.html
 cp ${BASE_DIR}htdocs/universe/index.html \
-        ${BASE_DIR}htdocs/universe/archives/${DATE}.html
+        ${BASE_DIR}htdocs/universe/archives/$(date +%G)/${DATE}.html
 
