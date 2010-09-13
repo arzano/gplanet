@@ -5,11 +5,18 @@ BASE_DIR="/var/www/planet.gentoo.org/"
 RESTRICT=""
 VENUS_DIR="/usr/lib/python2.6/site-packages/venus/"
 
-cd ${BASE_DIR}
+# Create folders and symlinks (for initial setup)
+mkdir -p ${BASE_DIR}htdocs
+[[ -L ${BASE_DIR}public_html ]] || ln -s ${BASE_DIR}htdocs ${BASE_DIR}public_html
+if [ ! -d ${BASE_DIR}planet-gentoo]; then 
+        git clone git://git.overlays.gentoo.org/proj/planet-gentoo.git ${BASE_DIR}planet-gentoo
+fi
+mkdir -p ${BASE_DIR}logs/{planet,universe} ${BASE_DIR}generated_configs
+touch generated_configs/venus.{planet,universe}.ini
+[[ -L ${BASE_DIR}htdocs/images ]] ln -s ${BASE_DIR}planet-gentoo/media/* htdocs/
+mkdir -p ${BASE_DIR}htdocs/archives ${BASE_DIR}htdocs/universe/archives
 
-# Get latest SVN changes
-#git pull ${BASE_DIR}/planet-gentoo/configs/ >/dev/null 2>&1
-#git pull ${BASE_DIR}/planet-gentoo/templates/ >/dev/null 2>&1
+# Get latest Git changes
 git pull ${BASE_DIR}planet-gentoo/ >/dev/null 2>&1
 
 # Run Venus
