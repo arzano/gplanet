@@ -62,15 +62,17 @@
 
 <?
 	$scandir = scandir('./', 1);
-	$scandir = preg_grep('/html$/', $scandir);
-	
-	echo "<ul>\n";
-	foreach($scandir as $filename) {
-		echo "<li> <a href='$filename'>$filename</a></li>\n";
+	echo "<ul>";
+	foreach ($scandir as $curdir) {
+		if ( $curdir == "index.php" || $curdir == ".." || $curdir == "." ) continue;
+		$cscan = scandir('./' . $curdir, 1);
+		foreach($cscan as $filename) {
+			if ( $filename == "." || $filename == ".." ) continue;
+			echo "<li> <a href='$filename'>$filename</a></li>\n";
+		}
 	}
 	echo "</ul>";
 ?>
-
 
 </td></tr>
 
