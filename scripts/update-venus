@@ -10,7 +10,7 @@ VENUS_DIR="/usr/lib/python2.6/site-packages/venus/"
 [[ -d ${BASE_DIR}logs/planet ]]			|| mkdir -p ${BASE_DIR}logs/planet
 [[ -d ${BASE_DIR}logs/universe ]]		|| mkdir -p ${BASE_DIR}logs/universe
 [[ -d ${BASE_DIR}generated_configs ]] 	|| mkdir ${BASE_DIR}generated_configs
-[[ -L ${BASE_DIR}htdocs/images ]] 		|| ln -s ${BASE_DIR}planet-gentoo/media/* htdocs/
+[[ -L ${BASE_DIR}htdocs/images ]] 		|| ln -s ${BASE_DIR}planet-gentoo/media/* ${BASE_DIR}htdocs/
 [[ -d ${BASE_DIR}htdocs/archives ]]		|| mkdir ${BASE_DIR}htdocs/archives
 [[ -d ${BASE_DIR}htdocs/universe/archives ]]	|| \
 	mkdir -p ${BASE_DIR}htdocs/universe/archives
@@ -43,4 +43,3 @@ cp ${BASE_DIR}htdocs/index.html \
         ${BASE_DIR}htdocs/archives/$(date +%G)/${DATE}.html
 cp ${BASE_DIR}htdocs/universe/index.html \
         ${BASE_DIR}htdocs/universe/archives/$(date +%G)/${DATE}.html
-
