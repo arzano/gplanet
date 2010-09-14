@@ -1,20 +1,23 @@
 #!/bin/bash
 DATE=$(date +%F)
 LOG_DATE=$(date +%F-%R)
-BASE_DIR="/var/www/planet.gentoo.org/"
+BASE_DIR="/var/www/planet.gentoo.org/" # created by cfengine
 RESTRICT=""
 VENUS_DIR="/usr/lib/python2.6/site-packages/venus/"
 
 # Create folders and symlinks (for initial setup)
-mkdir -p ${BASE_DIR}htdocs
-[[ -L ${BASE_DIR}public_html ]] || ln -s ${BASE_DIR}htdocs ${BASE_DIR}public_html
-mkdir -p ${BASE_DIR}logs/{planet,universe} ${BASE_DIR}generated_configs
-touch generated_configs/venus.{planet,universe}.ini
-[[ -L ${BASE_DIR}htdocs/images ]] ln -s ${BASE_DIR}planet-gentoo/media/* htdocs/
-mkdir -p ${BASE_DIR}htdocs/archives ${BASE_DIR}htdocs/universe/archives
-[[ -L ${BASE_DIR}htdocs/archives/index.php ]] || ln -s ${BASE_DIR}planet-gentoo/archives/planet/index.php ${BASE_DIR}htdocs/archives/index.php
-[[ -L ${BASE_DIR}htdocs/universe/archives/index.php ]] || ln -s ${BASE_DIR}planet-gentoo/archives/universe/index.php ${BASE_DIR}htdocs/universe/archives/index.php
-
+[[ -d ${BASE_DIR}htdocs ]]				|| mkdir ${BASE_DIR}htdocs
+[[ -d ${BASE_DIR}logs/planet ]]			|| mkdir -p ${BASE_DIR}logs/planet
+[[ -d ${BASE_DIR}logs/universe ]]		|| mkdir -p ${BASE_DIR}logs/universe
+[[ -d ${BASE_DIR}generated_configs ]] 	|| mkdir ${BASE_DIR}generated_configs
+[[ -L ${BASE_DIR}htdocs/images ]] 		|| ln -s ${BASE_DIR}planet-gentoo/media/* htdocs/
+[[ -d ${BASE_DIR}htdocs/archives ]]		|| mkdir ${BASE_DIR}htdocs/archives
+[[ -d ${BASE_DIR}htdocs/universe/archives ]]	|| \
+	mkdir -p ${BASE_DIR}htdocs/universe/archives
+[[ -L ${BASE_DIR}htdocs/archives/index.php ]]	|| \
+	ln -s ${BASE_DIR}planet-gentoo/archives/planet/index.php ${BASE_DIR}htdocs/archives/index.php
+[[ -L ${BASE_DIR}htdocs/universe/archives/index.php ]]	|| \
+	ln -s ${BASE_DIR}planet-gentoo/archives/universe/index.php ${BASE_DIR}htdocs/universe/archives/index.php
 
 # Get latest Git changes
 git pull ${BASE_DIR}planet-gentoo/ >/dev/null 2>&1
@@ -23,12 +26,14 @@ git pull ${BASE_DIR}planet-gentoo/ >/dev/null 2>&1
 for x in planet universe; do
         if [[ ! -z $RESTRICT ]]; then
                 for y in $RESTRICT; do
-                        rm ${BASE_DIR}planet-gentoo/configs/${x}/${y}
+                        rm -f ${BASE_DIR}planet-gentoo/configs/${x}/${y}
                 done
         fi
         cat ${BASE_DIR}planet-gentoo/configs/base/venus.${x} ${BASE_DIR}planet-gentoo/configs/${x}/* > ${BASE_DIR}generated_configs/venus.${x}.ini
         python ${VENUS_DIR}planet.py ${BASE_DIR}generated_configs/venus.${x}.ini > ${BASE_DIR}logs/${x}/${LOG_DATE}.log 2>&1
 done
+
+rm -f ${BASE_DIR}generated_configs/venus.{planet,universe}.ini
 
 # Delete old logs
 find ${BASE_DIR}logs -type f -mtime +30 -delete
