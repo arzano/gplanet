@@ -65,7 +65,7 @@
 		$cscan = scandir('./' . $curdir, 1);
 		foreach($cscan as $filename) {
 			if ( $filename == "." || $filename == ".." ) continue;
-			echo "<li> <a href='$filename'>$filename</a></li>\n";
+			echo "<li> <a href='$curdir/$filename'>$filename</a></li>\n";
 		}
 	}
 	echo "</ul>";
