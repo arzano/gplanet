@@ -20,7 +20,7 @@ VENUS_DIR="/usr/lib/python2.6/site-packages/venus/"
 	ln -s ${BASE_DIR}planet-gentoo/archives/universe/index.php ${BASE_DIR}htdocs/universe/archives/index.php
 
 # Get latest Git changes
-git pull ${BASE_DIR}planet-gentoo/ >/dev/null 2>&1
+cd ${BASE_DIR}planet-gentoo; git pull --force >/dev/null 2>&1
 
 # Run Venus
 for x in planet universe; do
