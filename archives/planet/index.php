@@ -24,15 +24,13 @@
 <div class="menu">
 <a href="http://www.gentoo.org/main/en/about.xml" class="menulink">About</a> |
           <a href="http://www.gentoo.org/proj/en/metastructure/projects.xml?showlevel=1" class="menulink">Projects</a> |
-          <a href="http://www.gentoo.org/main/en/philosophy.xml" class="menulink">Philosophy</a> |
           <a href="http://www.gentoo.org/doc/en/index.xml" class="menulink">Docs</a> |
           <a href="http://forums.gentoo.org/" class="menulink">Forums</a> |
           <a href="http://www.gentoo.org/main/en/lists.xml" class="menulink">Lists</a> |
           <a href="http://bugs.gentoo.org/" class="menulink">Bugs</a> |
-          <a href="http://www.cafepress.com/officialgentoo/" class="menulink">Store</a> |
-          <a href="http://www.gentoo.org/news/en/gmn/" class="menulink">GMN</a> |
           <a href="http://www.gentoo.org/main/en/where.xml" class="menulink">Get Gentoo!</a> |
-          <a href="http://www.gentoo.org/main/en/sponsors.xml" class="menulink">Sponsors</a>
+          <a href="http://www.gentoo.org/main/en/support.xml" class="menulink">Support</a>
+          <a href="http://planet.gentoo.org/" class="menulink">Planet</a>
 </div></td>
 
 
@@ -44,11 +42,10 @@
 <img alt="Gentoo Spaceship" src="/images/gridtest.gif" align="right" height="96" width="132"><br clear="all"><br>
 
 <div class='altmenu'>
-<br>Bugs? Comments? Suggestions? Contact us:
-<a href="mailto:planet@gentoo.org">planet@gentoo.org</a>
+<br>Bugs? Comments? Suggestions? <a href="http://www.gentoo.org/proj/en/userrel/planet/">Contact us!</a>
 
 <br><br><b>Powered by:</b><br>
-<a href="http://www.planetplanet.org/">Planet</a>
+<a href="http://www.intertwingly.net/code/venus/">Planet Venus</a>
 
 </div>
 </td>
@@ -78,7 +75,7 @@
 
 
 <tr><td colspan="2" class="footer">
-Gentoo Design, Copyright 2001-2006 Gentoo Foundation, Inc.<br>
+Gentoo Design, Copyright 2001-2010 Gentoo Foundation, Inc.<br>
 Views expressed in the content shown above do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
 </td></tr>
 </tbody></table></body></html>
