@@ -13,7 +13,7 @@ VENUS_DIR="/usr/lib/python2.6/site-packages/venus/"
 [[ -L ${BASE_DIR}htdocs/images ]] 		|| ln -s ${BASE_DIR}planet-gentoo/media/* ${BASE_DIR}htdocs/
 [[ -d ${BASE_DIR}htdocs/archives ]]		|| mkdir ${BASE_DIR}htdocs/archives
 [[ -d ${BASE_DIR}themes_common ]] 		|| mkdir -p ${BASE_DIR}themes_common; \
-	cp /usr/share/webapps/$(ls /usr/share/webapps/venus/ | grep "^20" | sort -r | head -n 1)/themes/common/* ${BASE_DIR}/themes_common/
+	cp /usr/share/webapps/venus/$(ls /usr/share/webapps/venus/ | grep "^20" | sort -r | head -n 1)/themes/common/* ${BASE_DIR}/themes_common/
 [[ -d ${BASE_DIR}htdocs/universe/archives ]]	|| \
 	mkdir -p ${BASE_DIR}htdocs/universe/archives
 [[ -L ${BASE_DIR}htdocs/archives/index.php ]]	|| \
