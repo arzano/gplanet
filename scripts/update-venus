@@ -35,8 +35,6 @@ for x in planet universe; do
         python ${VENUS_DIR}planet.py ${BASE_DIR}generated_configs/venus.${x}.ini > ${BASE_DIR}logs/${x}/${LOG_DATE}.log 2>&1
 done
 
-rm -f ${BASE_DIR}generated_configs/venus.{planet,universe}.ini
-
 # Delete old logs
 find ${BASE_DIR}logs -type f -mtime +30 -delete
 
