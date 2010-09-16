@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # A simple help script to create a new planet/universe config for a new user
-# Run it inside the planet/ topdir
+# Run it inside the planet-gentoo/ topdir
 # WARNING: Always check the changes that are made by this script before commiting
 # Many thanks to Arfrever Frehtes Taifersar Arahesis (arfrever@gentoo.org) for his suggestions
 
@@ -11,25 +11,23 @@
 import sys
 import hashlib
 
+GENERIC_DOMAINS = "aero", "asia", "biz", "cat", "com", "coop", \
+	"edu", "gov", "info", "int", "jobs", "mil", "mobi", "museum", \
+	"name", "net", "org", "pro", "tel", "travel"
+
 # the following makes it python3 compatible
 if sys.version_info[0] == 2:
 	input = raw_input
 
-def check_mail(email):
+def check_mail(email, domains = GENERIC_DOMAINS):
 	# http://commandline.org.uk/python/email-syntax-check/
-
-	# Ditch nonsense email addresses.
-
-	GENERIC_DOMAINS = "aero", "asia", "biz", "cat", "com", "coop", \
-	"edu", "gov", "info", "int", "jobs", "mil", "mobi", "museum", \
-	"name", "net", "org", "pro", "tel", "travel"
 
 	# Checks for a syntactically invalid email address.
 	# Email address must be 7 characters in total.
 	if len(email) < 7:
 		return False # Address too short
 
-	 # Split up email address into parts.
+	# Split up email address into parts.
 	try:
 		localpart, domainname = email.rsplit('@', 1)
 		host, toplevel = domainname.rsplit('.', 1)
@@ -58,7 +56,7 @@ def create_gravatar(email):
 def create_config(feed,path,nickname,realname,gravatar):
 	if feed:
 		f = open('configs/%s/%s' % (path,nickname), 'w')
-		f.write('[%s]\nusername = %s\nname = %s\ngravatar = %s' % (feed,nickname,realname,gravatar))
+		f.write('[%s]\nusername = %s\nname = %s\ngravatar = %s\n' % (feed,nickname,realname,gravatar))
 		f.close()
 		print('%s config created successfully' % path)
 	else:
@@ -67,7 +65,9 @@ def create_config(feed,path,nickname,realname,gravatar):
 def main():
 	realname = input('Real Name: ')
 	nickname = input('Nickname: ')
-	email = input('Email: ')
+	email = input('Email (Default: %s@gentoo.org): ' % nickname)
+	if email == '':
+		email = nickname + '@gentoo.org'
 	if check_mail(email):
 		gravatar = create_gravatar(email)
 		print('Gravatar hash: %s' % gravatar)
