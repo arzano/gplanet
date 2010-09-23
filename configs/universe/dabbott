@@ -1,4 +1,9 @@
+# David uses two blogs, one for linuxcrazy podcasts and one for personal gentoo-related posts
 [http://linuxcrazy.com/?q=rss.xml]
+name = LinuxCrazy Podcasts
+username = linuxcrazy
+gravatar = 722cf64173da3dcd4fc1b312aeeee73d
+[http://http://gentoo-pr.org/rss.xml]
 name = David Abbott
 username = dabbott
-gravatar = 722cf64173da3dcd4fc1b312aeeee73d
+gravatar = b1df0aa2a48a2cc8fe1124637ad2bbfa
