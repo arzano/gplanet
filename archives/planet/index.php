@@ -57,7 +57,7 @@
 <img src="/images/gentoo.gif"><p>Welcome to the <b>Planet Gentoo</b> archives.  Also available for <a href="http://planet.gentoo.org/universe/archives/">Gentoo Universe</a>.</p>
 </div>
 
-<?
+<?php
 	$scandir = scandir('./', 1);
 	echo "<ul>";
 	foreach ($scandir as $curdir) {
@@ -75,7 +75,7 @@
 
 
 <tr><td colspan="2" class="footer">
-Gentoo Design, Copyright 2001-2010 Gentoo Foundation, Inc.<br>
+Gentoo Design, Copyright 2001-2011 Gentoo Foundation, Inc.<br>
 Views expressed in the content shown above do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
 </td></tr>
 </tbody></table></body></html>
