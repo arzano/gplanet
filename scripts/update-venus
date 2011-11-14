@@ -3,7 +3,7 @@ DATE=$(date +%F)
 LOG_DATE=$(date +%F-%R)
 BASE_DIR="/var/www/planet.gentoo.org/" # created by cfengine
 RESTRICT=""
-VENUS_DIR="/usr/lib/python2.6/site-packages/venus/"
+VENUS_DIR="/usr/lib/python2.7/site-packages/venus/"
 
 # Create folders and symlinks (for initial setup)
 [[ -d ${BASE_DIR}htdocs ]]				|| mkdir ${BASE_DIR}htdocs
