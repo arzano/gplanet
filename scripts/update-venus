@@ -37,7 +37,7 @@ for instance in planet universe; do
 done
 
 # Delete old logs
-find ${BASE_DIR}/logs -type f -mtime +30 -delete
+find ${LOG_DIR} -type f -mtime +30 -delete
 
 # Check for year directory, if not there create both needed
 [[ -d ${BASE_DIR}/htdocs/archives/$(date +%G) ]] || \
