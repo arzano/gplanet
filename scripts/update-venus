@@ -6,7 +6,6 @@ REPO="${BASE_DIR}/planet-gentoo"
 VENUS_DIR="/usr/lib/python2.7/site-packages/venus"
 LOG_DIR="/var/log/planet.gentoo.org"
 BANNED_USERS=(
-    tampakrap
 )
 
 # Create folders and symlinks (for initial setup)
