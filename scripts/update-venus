@@ -4,7 +4,7 @@ LOG_DATE=$(date +%F-%R)
 BASE_DIR="/var/www/planet.gentoo.org" # created by cfengine
 REPO="${BASE_DIR}/planet-gentoo"
 VENUS_DIR="/usr/lib/python2.7/site-packages/venus"
-RESTRICT=(
+BANNED_USERS=(
     tampakrap
 )
 
