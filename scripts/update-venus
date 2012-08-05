@@ -24,12 +24,13 @@ BANNED_USERS=(
     ln -s ${BASE_DIR}/planet-gentoo/archives/universe/index.php ${BASE_DIR}/htdocs/universe/archives/index.php
 
 # Get latest Git changes
-cd ${BASE_DIR}/planet-gentoo; git pull --force >/dev/null 2>&1
+cd ${BASE_DIR}/planet-gentoo; git pull --force >/dev/null
 
 for instance in planet universe; do
     # Remove configs of banned users
     for banned_user in ${BANNED_USERS[@]}; do
         rm -f ${REPO}/configs/${instance}/${banned_user}
+    done
     # Generate the combined ini file from the split config files
     cat ${REPO}/configs/base/venus.${instance} ${REPO}/configs/${instance}/* > ${BASE_DIR}/generated_configs/venus.${instance}.ini
     # Run venus
