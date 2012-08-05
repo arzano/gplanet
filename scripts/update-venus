@@ -23,7 +23,9 @@ BANNED_USERS=(
     ln -s ${BASE_DIR}/planet-gentoo/archives/universe/index.php ${BASE_DIR}/htdocs/universe/archives/index.php
 
 # Get latest Git changes
-cd ${BASE_DIR}/planet-gentoo; git pull --force >/dev/null
+cd ${BASE_DIR}/planet-gentoo
+git reset --hard origin/master > /dev/null
+git pull --force >/dev/null
 
 for instance in planet universe; do
     # Remove configs of banned users
