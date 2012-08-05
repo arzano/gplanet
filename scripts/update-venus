@@ -24,7 +24,7 @@ BANNED_USERS=(
 # Get latest Git changes
 cd ${BASE_DIR}/planet-gentoo
 git reset --hard origin/master > /dev/null 2>&1
-git pull --force >/dev/null
+git pull --force >/dev/null 2>&1
 
 for instance in planet universe; do
     # Remove configs of banned users
