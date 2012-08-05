@@ -1,48 +1,49 @@
 #!/bin/bash
 DATE=$(date +%F)
 LOG_DATE=$(date +%F-%R)
-BASE_DIR="/var/www/planet.gentoo.org/" # created by cfengine
-RESTRICT="tampakrap"
-VENUS_DIR="/usr/lib/python2.7/site-packages/venus/"
+BASE_DIR="/var/www/planet.gentoo.org" # created by cfengine
+REPO="${BASE_DIR}/planet-gentoo"
+VENUS_DIR="/usr/lib/python2.7/site-packages/venus"
+RESTRICT=(
+    tampakrap
+)
 
 # Create folders and symlinks (for initial setup)
-[[ -d ${BASE_DIR}htdocs ]]				|| mkdir ${BASE_DIR}htdocs
-[[ -d ${BASE_DIR}logs/planet ]]			|| mkdir -p ${BASE_DIR}logs/planet
-[[ -d ${BASE_DIR}logs/universe ]]		|| mkdir -p ${BASE_DIR}logs/universe
-[[ -d ${BASE_DIR}generated_configs ]] 	|| mkdir ${BASE_DIR}generated_configs
-[[ -L ${BASE_DIR}htdocs/images ]] 		|| ln -s ${BASE_DIR}planet-gentoo/media/* ${BASE_DIR}htdocs/
-[[ -d ${BASE_DIR}htdocs/archives ]]		|| mkdir ${BASE_DIR}htdocs/archives
-[[ -d ${BASE_DIR}themes_common ]] 		|| mkdir -p ${BASE_DIR}themes_common; \
-	cp -r /usr/share/webapps/venus/$(ls /usr/share/webapps/venus/ | grep "^20" | sort -r | head -n 1)/themes/common/* ${BASE_DIR}/themes_common/
-[[ -d ${BASE_DIR}htdocs/universe/archives ]]	|| \
-	mkdir -p ${BASE_DIR}htdocs/universe/archives
-[[ -L ${BASE_DIR}htdocs/archives/index.php ]]	|| \
-	ln -s ${BASE_DIR}planet-gentoo/archives/planet/index.php ${BASE_DIR}htdocs/archives/index.php
-[[ -L ${BASE_DIR}htdocs/universe/archives/index.php ]]	|| \
-	ln -s ${BASE_DIR}planet-gentoo/archives/universe/index.php ${BASE_DIR}htdocs/universe/archives/index.php
+[[ -d ${BASE_DIR}/htdocs ]] || mkdir ${BASE_DIR}/htdocs
+[[ -d ${BASE_DIR}/logs/planet ]] || mkdir -p ${BASE_DIR}/logs/planet
+[[ -d ${BASE_DIR}/logs/universe ]] || mkdir -p ${BASE_DIR}/logs/universe
+[[ -d ${BASE_DIR}/generated_configs ]] || mkdir ${BASE_DIR}/generated_configs
+[[ -L ${BASE_DIR}/htdocs/images ]] || ln -s ${BASE_DIR}/planet-gentoo/media/* ${BASE_DIR}/htdocs
+[[ -d ${BASE_DIR}/htdocs/archives ]] || mkdir ${BASE_DIR}/htdocs/archives
+[[ -d ${BASE_DIR}/themes_common ]] || mkdir ${BASE_DIR}/themes_common; \
+    cp -r /usr/share/webapps/venus/$(ls /usr/share/webapps/venus/ | grep "^20" | sort -r | head -n 1)/themes/common/* ${BASE_DIR}/themes_common/
+[[ -d ${BASE_DIR}/htdocs/universe/archives ]] || mkdir -p ${BASE_DIR}/htdocs/universe/archives
+[[ -L ${BASE_DIR}/htdocs/archives/index.php ]] || \
+    ln -s ${BASE_DIR}/planet-gentoo/archives/planet/index.php ${BASE_DIR}/htdocs/archives/index.php
+[[ -L ${BASE_DIR}/htdocs/universe/archives/index.php ]] || \
+    ln -s ${BASE_DIR}/planet-gentoo/archives/universe/index.php ${BASE_DIR}/htdocs/universe/archives/index.php
 
 # Get latest Git changes
 cd ${BASE_DIR}planet-gentoo; git pull --force >/dev/null 2>&1
 
-# Run Venus
-for x in planet universe; do
-        if [[ ! -z $RESTRICT ]]; then
-                for y in $RESTRICT; do
-                        rm -f ${BASE_DIR}planet-gentoo/configs/${x}/${y}
-                done
-        fi
-        cat ${BASE_DIR}planet-gentoo/configs/base/venus.${x} ${BASE_DIR}planet-gentoo/configs/${x}/* > ${BASE_DIR}generated_configs/venus.${x}.ini
-        python ${VENUS_DIR}planet.py ${BASE_DIR}generated_configs/venus.${x}.ini > ${BASE_DIR}logs/${x}/${LOG_DATE}.log 2>&1
+for instance in planet universe; do
+    # Remove configs of banned users
+    for banned_user in ${BANNED_USERS[@]}; do
+        rm -f ${REPO}/configs/${instance}/${banned_user}
+    # Generate the combined ini file from the split config files
+    cat ${REPO}/configs/base/venus.${instance} ${REPO}/configs/${instance}/* > ${BASE_DIR}/generated_configs/venus.${instance}.ini
+    # Run venus
+    python ${VENUS_DIR}/planet.py ${BASE_DIR}/generated_configs/venus.${instance}.ini > ${BASE_DIR}/logs/${instance}/${LOG_DATE}.log
 done
 
 # Delete old logs
-find ${BASE_DIR}logs -type f -mtime +30 -delete
+find ${BASE_DIR}/logs -type f -mtime +30 -delete
 
 # Check for year directory, if not there create both needed
-[[ -d ${BASE_DIR}htdocs/archives/$(date +%G) ]]  || \
-      mkdir ${BASE_DIR}htdocs/{,universe/}archives/$(date +%G)
+[[ -d ${BASE_DIR}/htdocs/archives/$(date +%G) ]] || \
+    mkdir ${BASE_DIR}/htdocs/{,universe/}archives/$(date +%G)
 # Archive posts, use -a to retain readable permissions
-cp -a ${BASE_DIR}htdocs/index.html \
-        ${BASE_DIR}htdocs/archives/$(date +%G)/${DATE}.html
-cp -a ${BASE_DIR}htdocs/universe/index.html \
-        ${BASE_DIR}htdocs/universe/archives/$(date +%G)/${DATE}.html
+cp -a ${BASE_DIR}/htdocs/index.html \
+    ${BASE_DIR}/htdocs/archives/$(date +%G)/${DATE}.html
+cp -a ${BASE_DIR}/htdocs/universe/index.html \
+    ${BASE_DIR}/htdocs/universe/archives/$(date +%G)/${DATE}.html
