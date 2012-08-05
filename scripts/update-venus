@@ -24,7 +24,7 @@ RESTRICT=(
     ln -s ${BASE_DIR}/planet-gentoo/archives/universe/index.php ${BASE_DIR}/htdocs/universe/archives/index.php
 
 # Get latest Git changes
-cd ${BASE_DIR}planet-gentoo; git pull --force >/dev/null 2>&1
+cd ${BASE_DIR}/planet-gentoo; git pull --force >/dev/null 2>&1
 
 for instance in planet universe; do
     # Remove configs of banned users
