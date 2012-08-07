@@ -4,5 +4,6 @@
 # and email the planet admins with the result
 
 for instance in planet universe; do
+    echo "ERRORS in ${instance}"
     find /var/log/planet.gentoo.org/${instance} -type f -name "$(date +%Y-%m-%d)*" -exec grep "ERROR" {} \; | sort | uniq -c
 done
