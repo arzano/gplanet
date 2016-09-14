@@ -132,6 +132,7 @@ pre {
 img {
 	border: 0px;
 	max-width: 500px;
+	height: auto;
 }
 
 div#intro {
