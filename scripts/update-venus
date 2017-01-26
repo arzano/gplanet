@@ -34,7 +34,7 @@ for instance in planet universe; do
     # Generate the combined ini file from the split config files
     cat ${REPO}/configs/base/venus.${instance} ${REPO}/configs/${instance}/* > ${BASE_DIR}/generated_configs/venus.${instance}.ini
     # Run venus
-    python ${VENUS_DIR}/planet.py -v ${BASE_DIR}/generated_configs/venus.${instance}.ini > ${LOG_DIR}/${instance}/${LOG_DATE}.log 2>&1
+    python2 ${VENUS_DIR}/planet.py -v ${BASE_DIR}/generated_configs/venus.${instance}.ini > ${LOG_DIR}/${instance}/${LOG_DATE}.log 2>&1
 done
 
 # Delete old logs
