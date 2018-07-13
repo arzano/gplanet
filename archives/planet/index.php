@@ -62,7 +62,7 @@
 	$scandir = scandir('./', 1);
 	echo "<ul>";
 	foreach ($scandir as $curdir) {
-		if ( $curdir == "index.php" || $curdir == ".." || $curdir == "." ) continue;
+		if ( substr($curdir,0,5) == "index" || $curdir == ".." || $curdir == "." ) continue;
 		$cscan = scandir('./' . $curdir, 1);
 		foreach($cscan as $filename) {
 			if ( $filename == "." || $filename == ".." ) continue;
@@ -76,7 +76,7 @@
 
 
 <tr><td colspan="2" class="footer">
-Gentoo Design, Copyright 2001-2011 Gentoo Foundation, Inc.<br>
+Gentoo Design, Copyright 2001-2018 Gentoo Foundation, Inc.<br>
 Views expressed in the content shown above do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
 </td></tr>
 </tbody></table></body></html>
