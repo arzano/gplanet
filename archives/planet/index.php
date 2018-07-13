@@ -30,8 +30,8 @@
           <a href="https://bugs.gentoo.org/" class="menulink">Bugs</a> |
           <a href="https://www.gentoo.org/downloads/" class="menulink">Get Gentoo!</a> |
           <a href="https://www.gentoo.org/support/" class="menulink">Support</a> |
-          <a href="https://wiki.gentoo.org/wiki/Main_Page" class="menulink">Wiki</a>
-          <a href="http://planet.gentoo.org/" class="menulink">Planet</a>
+          <a href="https://wiki.gentoo.org/wiki/Main_Page" class="menulink">Wiki</a> |
+          <a href="https://planet.gentoo.org/" class="menulink">Planet</a>
 </div></td>
 
 
