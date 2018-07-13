@@ -7,6 +7,11 @@
 <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
 <link rel="stylesheet" href="/planet.css" type="text/css">
 <link rel="alternate" type="application/rss+xml" title="Planet Gentoo" href="rss20.xml">
+<style type="text/css">
+.row:after,.row:before{display:table;content:" "}
+.row:after{clear:both}
+div.archive-entry { float: left; width: 25%; }
+</style>
 </head>
 
 <body>
@@ -59,17 +64,28 @@
 </div>
 
 <?php
-	$scandir = scandir('./', 1);
-	echo "<ul>";
-	foreach ($scandir as $curdir) {
-		if ( substr($curdir,0,5) == "index" || $curdir == ".." || $curdir == "." ) continue;
-		$cscan = scandir('./' . $curdir, 1);
-		foreach($cscan as $filename) {
-			if ( $filename == "." || $filename == ".." ) continue;
-			echo "<li> <a href='$curdir/$filename'>$filename</a></li>\n";
+	class SortedFileIterator extends SplHeap {
+		public function __construct(Iterator $iterator) {
+			foreach($iterator as $item) {
+				$this->insert($item);
+			}
+		}
+		public function compare($b, $a) {
+			return strcmp($b->getRealpath(), $a->getRealpath());
 		}
 	}
-	echo "</ul>";
+	foreach (new SortedFileIterator(new FilesystemIterator('.')) as $entry) {
+		if (!$entry->isDir()) continue;
+		$path = $entry->getFileName();
+		echo "<div class='dateheading'>$path</div><div class='row'>";
+		foreach (new SortedFileIterator(new FilesystemIterator($entry)) as $file) {
+			if (!$file->isFile()) continue;
+			$filename = $file->getFileName();
+			$basename = $file->getBaseName('.html');
+			echo "<div class='archive-entry'> <a href='$path/$filename'>{$basename}</a></div>\n";
+                }
+		echo "</div><br />";
+	}
 ?>
 
 </td></tr>
