@@ -16,23 +16,23 @@
 
 ### Gentoo logo
 <td class="logobox">
-<a href="http://www.gentoo.org/"><img alt="Gentoo Logo" src="/images/gtop-s.jpg" width="193" height="88"></a><br>
-<a href="http://www.gentoo.org/"><img alt="Gentoo Logo Side" src="/images/gbot-s.gif" width="193" height="31"></a>
+<a href="https://www.gentoo.org/"><img alt="Gentoo Logo" src="/images/gtop-s.jpg" width="193" height="88"></a><br>
+<a href="https://www.gentoo.org/"><img alt="Gentoo Logo Side" src="/images/gbot-s.gif" width="193" height="31"></a>
 </td>
 
 ### Links across top
 <td class="linkbar">
 <div class="menu">
-<a href="http://www.gentoo.org/main/en/about.xml" class="menulink">About</a> |
-          <a href="http://www.gentoo.org/proj/en/metastructure/projects.xml?showlevel=1" class="menulink">Projects</a> |
-          <a href="http://www.gentoo.org/doc/en/index.xml" class="menulink">Docs</a> |
-          <a href="http://forums.gentoo.org/" class="menulink">Forums</a> |
-          <a href="http://www.gentoo.org/main/en/lists.xml" class="menulink">Lists</a> |
-          <a href="http://bugs.gentoo.org/" class="menulink">Bugs</a> |
-          <a href="http://www.gentoo.org/main/en/where.xml" class="menulink">Get Gentoo!</a> |
-          <a href="http://www.gentoo.org/main/en/support.xml" class="menulink">Support</a> |
+<a href="https://www.gentoo.org/get-started/about/" class="menulink">About</a> |
+          <a href="https://wiki.gentoo.org/wiki/Project:Gentoo" class="menulink">Projects</a> |
+          <a href="https://www.gentoo.org/support/documentation" class="menulink">Docs</a> |
+          <a href="https://forums.gentoo.org/" class="menulink">Forums</a> |
+          <a href="https://www.gentoo.org/get-involved/mailing-lists/" class="menulink">Lists</a> |
+          <a href="https://bugs.gentoo.org/" class="menulink">Bugs</a> |
+          <a href="https://www.gentoo.org/downloads/" class="menulink">Get Gentoo!</a> |
+          <a href="https://www.gentoo.org/support/" class="menulink">Support</a> |
           <a href="/archives/" class="menulink">Archives</a> |
-	  <a href="http://wiki.gentoo.org" class="menulink">Wiki</a>
+	  <a href="https://wiki.gentoo.org/wiki/Main_Page" class="menulink">Wiki</a>
 </div></td>
 
 
@@ -63,7 +63,7 @@ Views expressed in the content published here do not necessarily represent the v
 </a><br>
 </div>
 
-<br>Bugs? Comments? Suggestions? <a href="http://www.gentoo.org/proj/en/userrel/planet/">Contact us!</a>
+<br>Bugs? Comments? Suggestions? <a href="https://wiki.gentoo.org/wiki/Project:Planet">Contact us!</a>
 
 <br><br><b>Powered by:</b><br>
 <a href="http://www.intertwingly.net/code/venus/">Planet Venus</a>
@@ -88,9 +88,9 @@ Views expressed in the content published here do not necessarily represent the v
 </span>
 <TMPL_IF channel_username>
 a.k.a. <b><TMPL_VAR channel_username></b>
-(<a href="http://dev.gentoo.org/~<TMPL_VAR channel_username ESCAPE="HTML">/">homepage</a>,
+(<a href="https://dev.gentoo.org/~<TMPL_VAR channel_username ESCAPE="HTML">/">homepage</a>,
 <a
-href="http://bugs.gentoo.org/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=IN_PROGRESS&amp;email1=<TMPL_VAR channel_username ESCAPE="HTML">%40gentoo.org&amp;emailtype1=exact&amp;emailassigned_to1=1&amp;emailreporter1=1">bugs</a>)
+href="https://bugs.gentoo.org/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=IN_PROGRESS&amp;email1=<TMPL_VAR channel_username ESCAPE="HTML">%40gentoo.org&amp;emailtype1=exact&amp;emailassigned_to1=1&amp;emailreporter1=1">bugs</a>)
 </TMPL_IF>
 <TMPL_IF channel_project>
  <b>(<TMPL_VAR channel_project ESCAPE="HTML">)</b>
@@ -107,7 +107,7 @@ href="http://bugs.gentoo.org/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=C
 <table width="100%" style="table-layout:fixed"><tr><td>
 <div class="entrycontent"><p>
 <TMPL_IF channel_gravatar>
-<img class="face" src="http://www.gravatar.com/avatar/<TMPL_VAR channel_gravatar ESCAPE="HTML">.jpg?s=100&r=pg&d=http%3A%2F%2Fplanet.gentoo.org%2Fimages%2F<TMPL_IF channel_face><TMPL_VAR channel_face ESCAPE="HTML"><TMPL_ELSE>larrythecow.gif</TMPL_IF>" alt="" align="right">
+<img class="face" src="https://www.gravatar.com/avatar/<TMPL_VAR channel_gravatar ESCAPE="HTML">.jpg?s=100&r=pg&d=http%3A%2F%2Fplanet.gentoo.org%2Fimages%2F<TMPL_IF channel_face><TMPL_VAR channel_face ESCAPE="HTML"><TMPL_ELSE>larrythecow.gif</TMPL_IF>" alt="" align="right">
 </TMPL_IF>
 <TMPL_VAR content>
 </p>

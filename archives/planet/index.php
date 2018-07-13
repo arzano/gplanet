@@ -15,21 +15,22 @@
 
 
 <td class="logobox">
-<a href="http://www.gentoo.org/"><img alt="Gentoo Logo" src="/images/gtop-s.jpg" width="193" height="88"></a><br>
-<a href="http://www.gentoo.org/"><img alt="Gentoo Logo Side" src="/images/gbot-s.gif" width="193" height="31"></a>
+<a href="https://www.gentoo.org/"><img alt="Gentoo Logo" src="/images/gtop-s.jpg" width="193" height="88"></a><br>
+<a href="https://www.gentoo.org/"><img alt="Gentoo Logo Side" src="/images/gbot-s.gif" width="193" height="31"></a>
 </td>
 
 
 <td class="linkbar">
 <div class="menu">
-<a href="http://www.gentoo.org/main/en/about.xml" class="menulink">About</a> |
-          <a href="http://www.gentoo.org/proj/en/metastructure/projects.xml?showlevel=1" class="menulink">Projects</a> |
-          <a href="http://www.gentoo.org/doc/en/index.xml" class="menulink">Docs</a> |
-          <a href="http://forums.gentoo.org/" class="menulink">Forums</a> |
-          <a href="http://www.gentoo.org/main/en/lists.xml" class="menulink">Lists</a> |
-          <a href="http://bugs.gentoo.org/" class="menulink">Bugs</a> |
-          <a href="http://www.gentoo.org/main/en/where.xml" class="menulink">Get Gentoo!</a> |
-          <a href="http://www.gentoo.org/main/en/support.xml" class="menulink">Support</a>
+<a href="https://www.gentoo.org/get-started/about/" class="menulink">About</a> |
+          <a href="https://wiki.gentoo.org/wiki/Project:Gentoo" class="menulink">Projects</a> |
+          <a href="https://www.gentoo.org/support/documentation" class="menulink">Docs</a> |
+          <a href="https://forums.gentoo.org/" class="menulink">Forums</a> |
+          <a href="https://www.gentoo.org/get-involved/mailing-lists/" class="menulink">Lists</a> |
+          <a href="https://bugs.gentoo.org/" class="menulink">Bugs</a> |
+          <a href="https://www.gentoo.org/downloads/" class="menulink">Get Gentoo!</a> |
+          <a href="https://www.gentoo.org/support/" class="menulink">Support</a> |
+          <a href="https://wiki.gentoo.org/wiki/Main_Page" class="menulink">Wiki</a>
           <a href="http://planet.gentoo.org/" class="menulink">Planet</a>
 </div></td>
 
@@ -42,7 +43,7 @@
 <img alt="Gentoo Spaceship" src="/images/gridtest.gif" align="right" height="96" width="132"><br clear="all"><br>
 
 <div class='altmenu'>
-<br>Bugs? Comments? Suggestions? <a href="http://www.gentoo.org/proj/en/userrel/planet/">Contact us!</a>
+<br>Bugs? Comments? Suggestions? <a href="https://wiki.gentoo.org/wiki/Project:Planet">Contact us!</a>
 
 <br><br><b>Powered by:</b><br>
 <a href="http://www.intertwingly.net/code/venus/">Planet Venus</a>
