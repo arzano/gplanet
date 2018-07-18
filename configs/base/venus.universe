@@ -2,13 +2,13 @@
 
 # metadata
 name = Gentoo Universe
-link = http://planet.gentoo.org/universe/
+link = https://planet.gentoo.org/universe/
 #owner_name = Gentoo Foundation
 owner_email = planet@gentoo.org
-#description = Welcome to <b>Gentoo Universe</b>, an aggregation of weblog articles on all topics written by Gentoo developers. For a more refined aggregation of Gentoo-related topics only, you might be interested in <a href="http://planet.gentoo.org/">Planet Gentoo</a>.
+#description = Welcome to <b>Gentoo Universe</b>, an aggregation of weblog articles on all topics written by Gentoo developers. For a more refined aggregation of Gentoo-related topics only, you might be interested in <a href="https://planet.gentoo.org/">Planet Gentoo</a>.
 
 # For some reason the html template doesn't print the description var, changing the name to owner_name for now (NEEDS FIX)
-owner_name = Welcome to <b>Gentoo Universe</b>, an aggregation of weblog articles on all topics written by Gentoo developers. For a more refined aggregation of Gentoo-related topics only, you might be interested in <a href="http://planet.gentoo.org/">Planet Gentoo</a>.
+owner_name = Welcome to <b>Gentoo Universe</b>, an aggregation of weblog articles on all topics written by Gentoo developers. For a more refined aggregation of Gentoo-related topics only, you might be interested in <a href="https://planet.gentoo.org/">Planet Gentoo</a>.
 
 
 # planet

@@ -2,13 +2,13 @@
 
 # metadata
 name = Planet Gentoo
-link = http://planet.gentoo.org/
+link = https://planet.gentoo.org/
 #owner_name = Gentoo Foundation
 owner_email = planet@gentoo.org
 #description = Welcome to <b>Planet Gentoo</b>, an aggregation of Gentoo-related weblog articles written by Gentoo developers. For a broader range of topics, you might be interested in <a href="http://planet.gentoo.org/universe/">Gentoo Universe</a>.
 
 # For some reason the html template doesn't print the description var, changing the name to owner_name for now (NEEDS FIX)
-owner_name = Welcome to <b>Planet Gentoo</b>, an aggregation of Gentoo-related weblog articles written by Gentoo developers. For a broader range of topics, you might be interested in <a href="http://planet.gentoo.org/universe/">Gentoo Universe</a>.
+owner_name = Welcome to <b>Planet Gentoo</b>, an aggregation of Gentoo-related weblog articles written by Gentoo developers. For a broader range of topics, you might be interested in <a href="https://planet.gentoo.org/universe/">Gentoo Universe</a>.
 
 # planet
 cache_directory = /var/www/planet.gentoo.org/cache/planet
