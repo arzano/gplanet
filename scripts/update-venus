@@ -3,7 +3,8 @@ DATE=$(date +%F)
 LOG_DATE=$(date +%F-%R)
 BASE_DIR="/var/www/planet.gentoo.org" # created by cfengine
 REPO="${BASE_DIR}/planet-gentoo"
-VENUS_DIR="/usr/lib/python2.7/site-packages/venus"
+VENUS_DIR="/usr/lib64/python2.7/site-packages/venus"
+[[ -d "${VENUS_DIR}" ]] || VENUS_DIR="/usr/lib/python2.7/site-packages/venus"
 LOG_DIR="/var/log/planet.gentoo.org"
 BANNED_USERS=(
 )
@@ -20,6 +21,8 @@ BANNED_USERS=(
     ln -s ${BASE_DIR}/planet-gentoo/archives/planet/index.php ${BASE_DIR}/htdocs/archives/index.php
 [[ -L ${BASE_DIR}/htdocs/universe/archives/index.php ]] || \
     ln -s ${BASE_DIR}/planet-gentoo/archives/universe/index.php ${BASE_DIR}/htdocs/universe/archives/index.php
+[[ -L ${BASE_DIR}/htdocs/planet-tyrian.css ]] || \
+    ln -s ${BASE_DIR}/planet-gentoo/media/planet-tyrian.css ${BASE_DIR}/htdocs
 
 # Get latest Git changes
 cd ${BASE_DIR}/planet-gentoo
