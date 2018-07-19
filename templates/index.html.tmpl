@@ -167,10 +167,13 @@ a.k.a. <b><TMPL_VAR channel_username></b>
 </div>
 </TMPL_IF>
 
-<div class="media">
-<div class="media-body">
-<div><TMPL_VAR content>
-</div>
+<table width="100%" style="table-layout:fixed"><tr><td>
+<div class="entrycontent"><p>
+<TMPL_IF channel_gravatar>
+<img class="face" src="https://www.gravatar.com/avatar/<TMPL_VAR channel_gravatar ESCAPE="HTML">.jpg?s=100&r=pg&d=http%3A%2F%2Fplanet.gentoo.org%2Fimages%2F<TMPL_IF channel_face><TMPL_VAR channel_face ESCAPE="HTML"><TMPL_ELSE>larrythecow.gif</TMPL_IF>" alt="" align="right">
+</TMPL_IF>
+<TMPL_VAR content>
+</p>
 <TMPL_IF comments>
 <p>
 <span class="commentlink">
@@ -179,11 +182,7 @@ a.k.a. <b><TMPL_VAR channel_username></b>
 </p>
 </TMPL_IF>
 </div>
-<div class="media-right">
-<TMPL_IF channel_gravatar>
-<img class="media-object" src="https://www.gravatar.com/avatar/<TMPL_VAR channel_gravatar ESCAPE="HTML">.jpg?s=100&r=pg&d=http%3A%2F%2Fplanet.gentoo.org%2Fimages%2F<TMPL_IF channel_face><TMPL_VAR channel_face ESCAPE="HTML"><TMPL_ELSE>larrythecow.gif</TMPL_IF>" alt="" align="right">
-</TMPL_IF></div>
-</div>
+</td></tr></table>
 
 </TMPL_LOOP>
 
