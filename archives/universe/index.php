@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#54487a">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta property="og:title" content="Planet Gentoo Archives">
+  <meta property="og:title" content="Gentoo Universe Archives">
   <meta property="og:image" content="https://www.gentoo.org/assets/img/logo/gentoo-g.png">
   <meta name="twitter:image" content="https://www.gentoo.org/assets/img/logo/gentoo-g.png">
   <link rel="apple-touch-icon" href="https://www.gentoo.org/assets/img/logo/icon-192.png">
@@ -14,9 +14,6 @@
   <link href="https://assets.gentoo.org/tyrian/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="https://assets.gentoo.org/tyrian/tyrian.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="/planet-tyrian.css" type="text/css">
-  <style type="text/css">
-  div.archive-entry { float: left; width: 25%; }
-  </style>
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="search" type="application/opensearchdescription+xml" href="https://www.gentoo.org/search/www-gentoo-org.xml" title="Gentoo Website">
@@ -24,8 +21,6 @@
   <link rel="search" type="application/opensearchdescription+xml" href="https://www.gentoo.org/search/bugs-gentoo-org.xml" title="Gentoo Bugzilla">
   <link rel="search" type="application/opensearchdescription+xml" href="https://www.gentoo.org/search/packages-gentoo-org.xml" title="Gentoo Packages">
   <link rel="search" type="application/opensearchdescription+xml" href="https://www.gentoo.org/search/archives-gentoo-org.xml" title="Gentoo List Archives">
-  <link rel="alternate" type="application/rss+xml" title="Planet Gentoo" href="rss20.xml">
-  <link rel="alternate" type="application/atom+xml" title="Planet Gentoo" href="atom.xml">
 </head>
 
   <body class="">
@@ -94,19 +89,9 @@
 </header>
 
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div id="left-column" class="col-md-3">
-<div class="altmenu">
-<br>Bugs? Comments? Suggestions? <a href="https://wiki.gentoo.org/wiki/Project:Planet">Contact us!</a>
-
-<br><br><b>Powered by:</b><br>
-<a href="http://www.intertwingly.net/code/venus/">Planet Venus</a>
-
-</div>
-</div>
-
-<div id="content" class="col-md-9">
+<div id="content">
 <div class="media">
 <div class="media-left"><img src="/images/gentoo.gif" class="media-object"></div>
 <div class="media-body">Welcome to the <b>Gentoo Universe</b> archives.  Also available for <a href="http://planet.gentoo.org/planet/archives/">Planet Gentoo</a>.</div>
@@ -126,15 +111,16 @@
 	foreach (new SortedFileIterator(new FilesystemIterator('.')) as $entry) {
 		if (!$entry->isDir()) continue;
 		$path = $entry->getFileName();
-		echo "<div class='dateheading'>$path</div><div class='row'>";
+		echo "<div class='dateheading'>$path</div><div class='container'><div class='row'>";
 		foreach (new SortedFileIterator(new FilesystemIterator($entry)) as $file) {
 			if (!$file->isFile()) continue;
 			$filename = $file->getFileName();
 			$basename = $file->getBaseName('.html');
-			echo "<div class='archive-entry'> <a href='$path/$filename'>{$basename}</a></div>\n";
+			echo "<div class='col-xs-4 col-sm-2'> <a href='$path/$filename'>{$basename}</a></div>\n";
                 }
-		echo "</div><br />";
+		echo "</div></div><br />";
 	}
+	$last_updated = date('F j, Y, H:i T');
 ?>
 
 </div>
@@ -142,6 +128,27 @@
 </div>
 <footer>
   <div class="container-fluid">
+<div class="row">
+      <div class="col-xs-12 col-md-offset-2 col-md-7">
+        <h3 class="footerhead">Gentoo Planet</h3>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <strong>Last Updated:</strong><br><span class="kk-i18n-date" title="<?=$last_updated?>"><?=$last_updated?></span>
+          </div>
+          <div class="col-xs-12 col-md-4">
+		<strong>Powered by:</strong><br><a href="http://www.intertwingly.net/code/venus/">Planet Venus</a>
+          </div>
+          <div class="col-xs-12 col-md-4">
+		<a href="rss20.xml"><img src="/images/rss20.png" border="0" alt="Syndicate this Planet"></a><br>
+		<a href="opml.xml"><img src="/images/opml.png" border="0" alt="Blogroll"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <h3 class="footerhead">Questions or comments?</h3>
+        Please feel free to <a href="https://wiki.gentoo.org/wiki/Project:Planet">contact us</a>.
+      </div>
+    </div>
     <div class="row">
       <div class="col-xs-3 col-md-2">
         <ul class="footerlinks three-icons">
