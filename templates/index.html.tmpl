@@ -112,26 +112,6 @@
 </TMPL_LOOP>
 </ul>
 </div>
-<br><b>Last updated:</b><br>
-<TMPL_VAR date>
-
-<br><br><b>Disclaimer:</b><br>
-Views expressed in the content published here do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
-
-<br><br><div align="center">
-<a href="rss20.xml">
-<img src="/images/rss20.png" border="0" alt="Syndicate this Planet">
-</a><br>
-<a href="opml.xml">
-<img src="/images/opml.png" border="0" alt="Blogroll">
-</a><br>
-</div>
-
-<br>Bugs? Comments? Suggestions? <a href="https://wiki.gentoo.org/wiki/Project:Planet">Contact us!</a>
-
-<br><br><b>Powered by:</b><br>
-<a href="http://www.intertwingly.net/code/venus/">Planet Venus</a>
-
 </div>
 </div>
 
@@ -141,6 +121,10 @@ Views expressed in the content published here do not necessarily represent the v
 <div class="media-left"><img src="/images/gentoo.png" class="media-object"></div>
 <div class="media-body"><TMPL_VAR description><TMPL_VAR owner_name></div>
 </div><br />
+
+<b>Disclaimer:</b><br>
+Views expressed in the content published here do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
+<br><br>
 
 <TMPL_LOOP Items>
 <TMPL_IF new_date><div class="dateheading"><TMPL_VAR new_date></div></TMPL_IF>
@@ -189,7 +173,27 @@ a.k.a. <b><TMPL_VAR channel_username></b>
 </div>
 <footer>
   <div class="container-fluid">
-    <div class="row">
+<div class="row">
+      <div class="col-xs-12 col-md-offset-2 col-md-7">
+        <h3 class="footerhead">Gentoo Planet</h3>
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <strong>Last Updated:</strong><br><span class="kk-i18n-date" title="<TMPL_VAR date>"><TMPL_VAR date></span>
+          </div>
+          <div class="col-xs-12 col-md-4">
+		<strong>Powered by:</strong><br><a href="http://www.intertwingly.net/code/venus/">Planet Venus</a>
+          </div>
+          <div class="col-xs-12 col-md-4">
+		<a href="rss20.xml"><img src="/images/rss20.png" border="0" alt="Syndicate this Planet"></a><br>
+		<a href="opml.xml"><img src="/images/opml.png" border="0" alt="Blogroll"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-3">
+        <h3 class="footerhead">Questions or comments?</h3>
+        Please feel free to <a href="https://wiki.gentoo.org/wiki/Project:Planet">contact us</a>.
+      </div>
+    </div>    <div class="row">
       <div class="col-xs-3 col-md-2">
         <ul class="footerlinks three-icons">
           <li><a href="https://twitter.com/gentoo" title="@Gentoo on Twitter"><span class="fa fa-twitter fa-fw"></span></a></li>
