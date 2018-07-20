@@ -96,9 +96,18 @@
 
     <div class="container-fluid">
       <div class="row">
+	<div class="col-md-9 col-lg-10 col-lg-offset-2 col-md-offset-3">
+		<div class="media">
+		<div class="media-left"><img src="/images/gentoo.png" class="media-object"></div>
+		<div class="media-body"><TMPL_VAR description><TMPL_VAR owner_name></div>
+		</div><br />
+
+		<b>Disclaimer:</b><br>
+		Views expressed in the content published here do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
+	</div>&nbsp;
         <div id="left-column" class="col-md-3 col-lg-2">
-<div class="altmenu">
-<div class="visible-sm-block visible-md-block visible-lg-block"><b>Contributors:</b></div>
+	<div class="altmenu">
+	<div class="visible-sm-block visible-md-block visible-lg-block"><b>Contributors:</b></div>
         <div class="visible-xs-block">
           <button type="button" class="btn btn-primary btn-block" data-toggle="collapse" data-target=".navbar-contrib-collapse" id="contrib-collapse">
 		Contributors: <span class="caret"></span>
@@ -114,18 +123,9 @@
 </div>
 </div>
 </div>
-
+&nbsp;
 ### The actual blog entries
 <div id="content" class="col-md-9 col-lg-10">
-<div class="media">
-<div class="media-left"><img src="/images/gentoo.png" class="media-object"></div>
-<div class="media-body"><TMPL_VAR description><TMPL_VAR owner_name></div>
-</div><br />
-
-<b>Disclaimer:</b><br>
-Views expressed in the content published here do not necessarily represent the views of Gentoo Linux or the Gentoo Foundation.
-<br><br>
-
 <TMPL_LOOP Items>
 <TMPL_IF new_date><div class="dateheading"><TMPL_VAR new_date></div></TMPL_IF>
 
