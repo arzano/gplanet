@@ -93,7 +93,7 @@
       <div class="row">
 <div id="content">
 <div class="media">
-<div class="media-left"><img src="/images/gentoo.gif" class="media-object"></div>
+<div class="media-left"><img src="/images/gentoo.png" class="media-object"></div>
 <div class="media-body">Welcome to the <b>Gentoo Universe</b> archives.  Also available for <a href="http://planet.gentoo.org/planet/archives/">Planet Gentoo</a>.</div>
 </div><br />
 
