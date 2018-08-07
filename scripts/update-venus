@@ -52,8 +52,8 @@ cp -a ${BASE_DIR}/htdocs/index.html \
 cp -a ${BASE_DIR}/htdocs/universe/index.html \
     ${BASE_DIR}/htdocs/universe/archives/$(date +%G)/${DATE}.html
 cd ${BASE_DIR}/htdocs/archives
-php index.php > index.html.gen
+php -d date.timezone=UTC index.php > index.html.gen
 [[ $? == 0 ]] && mv index.html.gen index.html
 cd ${BASE_DIR}/htdocs/universe/archives
-php index.php > index.html.gen
+php -d date.timezone=UTC index.php > index.html.gen
 [[ $? == 0 ]] && mv index.html.gen index.html
