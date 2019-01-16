@@ -1,9 +1,4 @@
-# Alice would like both blogs Bug 601010
-[http://aliceinwire.net/blog/index.atom]
-username = alicef
-name = Alice Ferrazzi
-gravatar = fc4d0239c296cce15e080882c8f34773
-[http://blogs.gentoo.org/alicef/category/gentoo/feed/]
+[https://alicef.me/feeds/all.atom.xml]
 username = alicef
 name = Alice Ferrazzi
 gravatar = fc4d0239c296cce15e080882c8f34773

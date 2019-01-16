@@ -1,9 +1,4 @@
-# Alice wants two blogs on Planet. Bug 601010
-[http://aliceinwire.net/tag/tags/gentoo/index.atom]
-username = alicef
-name = Alice Ferrazzi
-gravatar = fc4d0239c296cce15e080882c8f34773
-[http://blogs.gentoo.org/alicef/category/gentoo/feed/]
+[https://alicef.me/feeds/gentoo.atom.xml]
 username = alicef
 name = Alice Ferrazzi
 gravatar = fc4d0239c296cce15e080882c8f34773
