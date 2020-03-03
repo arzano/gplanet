@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "planet-tyrian": "git+https://anongit.gentoo.org/git/sites/planet-tyrian.git"
+  }
+}

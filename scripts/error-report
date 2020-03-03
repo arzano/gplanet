@@ -1,9 +1,0 @@
-#!/bin/bash
-# At the end of the day, scan the logs of planet/universe,
-# grep for errors, sort them, count the duplicate URLs
-# and email the planet admins with the result
-
-for instance in planet universe; do
-    echo "ERRORS in ${instance}"
-    find /var/log/planet.gentoo.org/${instance} -type f -atime -7 -exec grep "ERROR" {} \; | grep -v "Errno" | sort | uniq -c
-done

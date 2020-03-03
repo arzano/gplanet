@@ -1,8 +1,2 @@
-*.py
-*.py.orig
-*.pyc
-cache
-*.log
-compat_logging
-*.swp
-*.tmplc
+node_modules
+vendor/bundle
