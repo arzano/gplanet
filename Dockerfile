@@ -13,12 +13,13 @@ WORKDIR /var/www/planet.gentoo.org
 
 USER gplanet
 
-CMD bundle install \
+RUN bundle install \
     && npm install \
     && cd node_modules/@gentoo/tyrian \
     && npm install \
-    && npm run dist \
-    && cd /var/www/planet.gentoo.org \
+    && npm run dist
+
+CMD cd /var/www/planet.gentoo.org \
     && rm -rf build/* \
     && bundle exec pluto update -d data \
     && bundle exec pluto build -o build -d data -t tyrian
