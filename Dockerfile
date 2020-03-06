@@ -20,7 +20,6 @@ RUN bundle install \
     && npm run dist
 
 CMD cd /var/www/planet.gentoo.org \
-    && rm -rf build/* \
     && bundle exec pluto update -d data \
     && bundle exec pluto build -o build -d data -t tyrian
 
