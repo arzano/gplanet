@@ -1,40 +1,40 @@
 [aballier_universe]
 title = aballier
 author = Alexis Ballier
-link = http://aballier.wordpress.com/
-feed = http://aballier.wordpress.com/feed/atom/
+link = https://aballier.wordpress.com/
+feed = https://aballier.wordpress.com/feed/atom/
 avatar = bdfe43959b94effb58540b239fc9a312
 location = universe
 
 [ackle_universe]
 title = ackle
 author = Sean Amoss
-link = http://blogs.gentoo.org/ackle/
-feed = http://blogs.gentoo.org/ackle/feed/
+link = https://blogs.gentoo.org/ackle/
+feed = https://blogs.gentoo.org/ackle/feed/
 avatar = ae3cdae654daf0394e56a4fc421ecab6
 location = universe
 
 [ago_universe]
 title = ago
 author = Agostino Sarubbo
-link = http://blogs.gentoo.org/ago/
-feed = http://blogs.gentoo.org/ago/feed/
+link = https://blogs.gentoo.org/ago/
+feed = https://blogs.gentoo.org/ago/feed/
 avatar = 65812af8273d1c848acd97da072fd9db
 location = universe
 
 [ahenobarbi_universe]
 title = ahenobarbi
 author = Joachim Bartosik
-link = http://ahenobarbi.wordpress.com/
-feed = http://ahenobarbi.wordpress.com/feed/
+link = https://ahenobarbi.wordpress.com/
+feed = https://ahenobarbi.wordpress.com/feed/
 avatar = 4da36b48957264e3434a26e7e299bfd1
 location = universe
 
 [alexxy_universe]
 title = alexxy
 author = Alexey Shvetsov
-link = http://blogs.gentoo.org/alexxy/
-feed = http://blogs.gentoo.org/alexxy/feed/
+link = https://blogs.gentoo.org/alexxy/
+feed = https://blogs.gentoo.org/alexxy/feed/
 avatar = 5e5770d5a9d7ad9996e317d79d9c34d6
 location = universe
 
@@ -57,8 +57,8 @@ location = universe
 [calchan_universe]
 title = calchan
 author = Denis Dupeyron
-link = http://blogs.gentoo.org/calchan/
-feed = http://blogs.gentoo.org/calchan/feed/
+link = https://blogs.gentoo.org/calchan/
+feed = https://blogs.gentoo.org/calchan/feed/
 avatar = e63822cc4cd982efe55ef2b380522d06
 location = universe
 
@@ -73,80 +73,80 @@ location = universe
 [cardoe_universe]
 title = cardoe
 author = Doug Goldstein
-link = http://cardoe.wordpress.com/
-feed = http://cardoe.wordpress.com/feed/
+link = https://cardoe.wordpress.com/
+feed = https://cardoe.wordpress.com/feed/
 avatar = 5e3ed10331dc78ae2f37c9a85df0a1b5
 location = universe
 
 [chithanh_universe]
 title = chithanh
 author = Chí-Thanh Christopher Nguyễn
-link = http://chithanh.blogspot.com/
-feed = http://chithanh.blogspot.com/feeds/posts/default
+link = https://chithanh.blogspot.com/
+feed = https://chithanh.blogspot.com/feeds/posts/default
 avatar = 5a91a3cfe28732970165d95af4120b02
 location = universe
 
 [chutzpah_universe]
 title = chutzpah
 author = Patrick McLean
-link = http://blogs.gentoo.org/chutzpah/
-feed = http://blogs.gentoo.org/chutzpah/feed/
+link = https://blogs.gentoo.org/chutzpah/
+feed = https://blogs.gentoo.org/chutzpah/feed/
 avatar = eb761e1047f1416ae3d947448cf92683
 location = universe
 
 [dilfridge_universe]
 title = dilfridge
 author = Andreas K. Hüttel
-link = http://blog.akhuettel.de/
-feed = http://blog.akhuettel.de/feeds/posts/default/
+link = https://dilfridge.blogspot.com/
+feed = https://dilfridge.blogspot.com/feeds/posts/default/
 avatar = 36167de7e11e3b358446823d51e69792
 location = universe
 
 [dirtyepic_universe]
 title = dirtyepic
 author = Ryan Hill
-link = http://psykil.livejournal.com/
-feed = http://psykil.livejournal.com/data/rss
+link = https://psykil.livejournal.com/
+feed = https://psykil.livejournal.com/data/rss
 avatar = d7f0456e867190e62fd68fa96ddd89c9
 location = universe
 
 [eras_universe]
 title = eras
 author = Eray Aslan
-link = http://erayaslan.blogspot.com/
-feed = http://erayaslan.blogspot.com/feeds/posts/default
+link = https://erayaslan.blogspot.com/
+feed = https://erayaslan.blogspot.com/feeds/posts/default
 avatar = bb700203ebb3cdaf0d0bf65e797445fb
 location = universe
 
 [eva_universe]
 title = eva
 author = Gilles Dartiguelongue
-link = http://blogs.gentoo.org/eva/
-feed = http://blogs.gentoo.org/eva/feed/
+link = https://blogs.gentoo.org/eva/
+feed = https://blogs.gentoo.org/eva/feed/
 avatar = bf83f7bea8e7adf103af9a748d5157d6
 location = universe
 
 [floppym_universe]
 title = floppym
 author = Mike Gilbert
-link = http://floppym.blogspot.com/
-feed = http://floppym.blogspot.com/feeds/posts/default
+link = https://floppym.blogspot.com/
+feed = https://floppym.blogspot.com/feeds/posts/default
 avatar = 343db2c9bfc4d041109000a3284478c3
 location = universe
 
 [ford_prefect_universe]
 title = ford_prefect
 author = Arun Raghavan
-link = http://arunraghavan.net/
-feed = http://arunraghavan.net/feed/
+link = https://arunraghavan.net/
+feed = https://arunraghavan.net/feed/
 avatar = 3363059bc3358c080f3d11822f91b8e8
 location = universe
 
 [gmn]
 title = gmn
 author = Gentoo Monthly Newsletter
-link = http://blogs.gentoo.org/news/
-feed = http://blogs.gentoo.org/news/category/news/feed
+link = https://blogs.gentoo.org/news/
+feed = https://blogs.gentoo.org/news/category/news/feed
 avatar = 05ff542cce5ce781bb90ab7c77992fc5
 location = planet
 
@@ -161,31 +161,34 @@ location = universe
 [graaff_universe]
 title = graaff
 author = Hans de Graaff
-link = http://moving-innovations.com/blog/
-feed = http://moving-innovations.com/blog/articles.rss
+link = https://moving-innovations.com/blog/
+feed = https://moving-innovations.com/blog/articles.rss
 avatar = d64a24f0a5393c31fb36e40261686979
 location = universe
 
 [hanno_universe]
 title = hanno
 author = Hanno Böck
-link = http://www.hboeck.de/
-feed = http://www.hboeck.de/feeds/categories/14-English.rss
+link = https://www.hboeck.de/
+feed = https://www.hboeck.de/feeds/categories/14-English.rss
 avatar = 5df517f31c46aa6ff491ad966fdf3c9c
 location = universe
 
-[hexxeh_universe]
-title = hexxeh
-author = Liam McLoughlin
-link = http://hexxeh.net/
-feed = http://hexxeh.net/?feed=rss2
-avatar = 3875538cd5c8cce9e818863760e4b0f2
-location = universe
+#
+## disabled due feed not found
+#
+#[hexxeh_universe]
+#title = hexxeh
+#author = Liam McLoughlin
+#link = https://hexxeh.net/
+#feed = https://hexxeh.net/?feed=rss2
+#avatar = 3875538cd5c8cce9e818863760e4b0f2
+#location = universe
 
 [idl0r_universe]
 title = idl0r
 author = Christian Ruppert
-link = http://idl0r.qasl.de/blog/index.php?tempskin=_
+link = https://idl0r.qasl.de/blog/index.php?tempskin=_
 feed = https://idl0r.qasl.de/blog/feeds/all.atom.xml
 avatar = c79f6dbae1252f66be901d958475230f
 location = universe
@@ -193,47 +196,47 @@ location = universe
 [jmbsvicetto_universe]
 title = jmbsvicetto
 author = Jorge Manuel B. S. Vicetto
-link = http://blogs.gentoo.org/jmbsvicetto/
-feed = http://blogs.gentoo.org/jmbsvicetto/feed/
+link = https://blogs.gentoo.org/jmbsvicetto/
+feed = https://blogs.gentoo.org/jmbsvicetto/feed/
 avatar = d52f0e8580b6b6c0ef134f1f92a554f7
 location = universe
 
 [johu_universe]
 title = johu
 author = Johannes Huber
-link = http://blogs.gentoo.org/johu/
-feed = http://blogs.gentoo.org/johu/feed/
+link = https://blogs.gentoo.org/johu/
+feed = https://blogs.gentoo.org/johu/feed/
 avatar = b1565223f4a62674b032dd4c5c3f6785
 location = universe
 
 [kensington_universe]
 title = kensington
 author = Michael Palimaka
-link = http://blogs.gentoo.org/kensington/
-feed = http://blogs.gentoo.org/kensington/feed/
+link = https://blogs.gentoo.org/kensington/
+feed = https://blogs.gentoo.org/kensington/feed/
 avatar = 78597b80d602e2938a22216f76b86b8c
 location = universe
 
 [k_f_universe]
 title = k_f
 author = Kristian Fiskerstrand
-link = http://blog.sumptuouscapital.com/
-feed = http://blog.sumptuouscapital.com/feed/
+link = https://blog.sumptuouscapital.com/
+feed = https://blog.sumptuouscapital.com/feed/
 location = universe
 
 [kingtaco_universe]
 title = kingtaco
 author = Mike Doty
-link = http://blogs.gentoo.org/kingtaco/
-feed = http://blogs.gentoo.org/kingtaco/feed/
+link = https://blogs.gentoo.org/kingtaco/
+feed = https://blogs.gentoo.org/kingtaco/feed/
 avatar = c903965bacd923432e65d85c71e04d13
 location = universe
 
 [leio_universe]
 title = leio
 author = Mart Raudsepp
-link = http://blogs.gentoo.org/leio/
-feed = http://blogs.gentoo.org/leio/feed/
+link = https://blogs.gentoo.org/leio/
+feed = https://blogs.gentoo.org/leio/feed/
 avatar = cce631fa0ea9795887650e81373ea944
 location = universe
 
@@ -248,40 +251,40 @@ location = universe
 [lu_zero_universe]
 title = lu_zero
 author = Luca Barbato
-link = http://blogs.gentoo.org/lu_zero/
-feed = http://blogs.gentoo.org/lu_zero/feed/
+link = https://blogs.gentoo.org/lu_zero/
+feed = https://blogs.gentoo.org/lu_zero/feed/
 avatar = 568ad11ab0e853c0e4e8f8ade8bd5278
 location = universe
 
 [mattst88_universe]
 title = mattst88
 author = Matt Turner
-link = http://mattst88.com/blog/
-feed = http://mattst88.com/blog/rss.php
+link = https://mattst88.com/blog/
+feed = https://mattst88.com/blog/rss.php
 avatar = 039be336c471acee847c2740efae15c0
 location = universe
 
 [mgorny_universe]
 title = mgorny
 author = Michał Górny
-link = http://blogs.gentoo.org/mgorny/
-feed = http://blogs.gentoo.org/mgorny/feed/
+link = https://blogs.gentoo.org/mgorny/
+feed = https://blogs.gentoo.org/mgorny/feed/
 avatar = ff5429ef741b434eb2011692832f810e
 location = universe
 
 [mpagano_universe]
 title = mpagano
 author = Mike Pagano
-link = http://www.mpagano.com/blog/
-feed = http://www.mpagano.com/blog/?feed=rss2
+link = https://www.mpagano.com/blog/
+feed = https://www.mpagano.com/blog/?feed=rss2
 avatar = bdfea328a68fbcf028ac72b0d0e87a54
 location = universe
 
 [nathanzachary_universe]
 title = nathanzachary
 author = Nathan Zachary
-link = http://z-issue.com/wp/
-feed = http://z-issue.com/wp/feed/
+link = https://z-issue.com/wp/
+feed = https://z-issue.com/wp/feed/
 avatar = e0d47e33ded84d7ef31c2a8c2d312022
 location = universe
 
@@ -296,16 +299,16 @@ location = universe
 [peper_universe]
 title = peper
 author = Piotr Jaroszyński
-link = http://feeds2.feedburner.com/peper
-feed = http://feeds2.feedburner.com/peper
+link = https://feeds2.feedburner.com/peper
+feed = https://feeds2.feedburner.com/peper
 avatar = b9e30964c7bbc7633a706ef16a4f57c7
 location = universe
 
 [phosphan_universe]
 title = phosphan
 author = Patrick Kursawe
-link = http://blogs.gentoo.org/phosphan/
-feed = http://blogs.gentoo.org/phosphan/feed/
+link = https://blogs.gentoo.org/phosphan/
+feed = https://blogs.gentoo.org/phosphan/feed/
 avatar = 298f8573b66ce178931cd12ce6c6e941
 location = universe
 
@@ -320,8 +323,8 @@ location = universe
 [psomas_universe]
 title = psomas
 author = Stratos Psomadakis
-link = http://psomas.wordpress.com/
-feed = http://psomas.wordpress.com/feed/
+link = https://psomas.wordpress.com/
+feed = https://psomas.wordpress.com/feed/
 avatar = 2fbac3482c4336cc85a24ac0da50e2d9
 location = universe
 
@@ -344,24 +347,24 @@ location = universe
 [remi_universe]
 title = remi
 author = Remi Cardona
-link = http://blogs.gentoo.org/remi/
-feed = http://blogs.gentoo.org/remi/feed/
+link = https://blogs.gentoo.org/remi/
+feed = https://blogs.gentoo.org/remi/feed/
 avatar = c13d5b50dc0cf902b25075f8e79fe23a
 location = universe
 
 [rich0_universe]
 title = rich0
 author = Richard Freeman
-link = http://rich0gentoo.wordpress.com/
-feed = http://rich0gentoo.wordpress.com/feed/
+link = https://rich0gentoo.wordpress.com/
+feed = https://rich0gentoo.wordpress.com/feed/
 avatar = 2e5ed33a99ac2043a6f7c98b01c110d4
 location = universe
 
 [robbat2_universe]
 title = robbat2
 author = Robin Johnson
-link = http://robbat2.livejournal.com/data/
-feed = http://robbat2.livejournal.com/data/rss
+link = https://robbat2.livejournal.com/data/
+feed = https://robbat2.livejournal.com/data/rss
 avatar = 92acbdd6a6a4ac8239f987f1ee9181b8
 location = universe
 
@@ -376,18 +379,21 @@ location = universe
 [sping_universe]
 title = sping
 author = Sebastian Pipping
-link = http://blog.hartwork.org/
-feed = http://blog.hartwork.org/?feed=rss2&cat=49
+link = https://blog.hartwork.org/
+feed = https://blog.hartwork.org/?feed=rss2&cat=49
 avatar = 432c87ffa36454c734af554bb450189e
 location = universe
 
-[steev_universe]
-title = steev
-author = Steev Klimaszewski
-link = http://www.steev.net/
-feed = http://www.steev.net/?feed=rss2
-avatar = e190dfc61c3e3ea459f3d796130f7806
-location = universe
+#
+## disabled due feed not found
+#
+#[steev_universe]
+#title = steev
+#author = Steev Klimaszewski
+#link = http://www.steev.net/
+#feed = http://www.steev.net/?feed=rss2
+#avatar = e190dfc61c3e3ea459f3d796130f7806
+#location = universe
 
 [swift_universe]
 title = swift
@@ -397,42 +403,45 @@ feed = http://blog.siphos.be/feed/rss.xml
 avatar = a163d8bce08d529a0419c8765766c3b6
 location = universe
 
-[thev00d00_universe]
-title = thev00d00
-author = Ian Whyman
-link = http://v00d00.net/
-feed = http://v00d00.net/rss/
-avatar = 8c9d66ff69aeba9d9df3797f0b295029
-location = universe
+#
+## disabled due feed not found
+#
+#[thev00d00_universe]
+#title = thev00d00
+#author = Ian Whyman
+#link = http://v00d00.net/
+#feed = http://v00d00.net/rss/
+#avatar = 8c9d66ff69aeba9d9df3797f0b295029
+#location = universe
 
 [titanofold_universe]
 title = titanofold
 author = Aaron W. Swenson
-link = http://blogs.gentoo.org/titanofold/
-feed = http://blogs.gentoo.org/titanofold/category/universe/feed/
+link = https://blogs.gentoo.org/titanofold/
+feed = https://blogs.gentoo.org/titanofold/category/universe/feed/
 avatar = 8d593f3e223e61615729dc4323926490
 location = universe
 
 [ultrabug_universe]
 title = ultrabug
 author = Alexys Jacob
-link = http://www.ultrabug.fr/
-feed = http://www.ultrabug.fr/feed/
+link = https://www.ultrabug.fr/
+feed = https://www.ultrabug.fr/feed/
 avatar = 8a02ec9d317b82419e8c0adf533f92db
 location = universe
 
 [voyageur_universe]
 title = voyageur
 author = Bernard Cafarelli
-link = http://blog.cafarelli.fr/
-feed = http://blog.cafarelli.fr/feed/rss2
+link = https://blog.cafarelli.fr/
+feed = https://blog.cafarelli.fr/feed/rss2
 avatar = 23b7c03bc5b805fe6fa90e8cf2f1d5c6
 location = universe
 
 [zmedico_universe]
 title = zmedico
 author = Zack Medico
-link = http://blogs.gentoo.org/zmedico/
-feed = http://blogs.gentoo.org/zmedico/feed/
+link = https://blogs.gentoo.org/zmedico/
+feed = https://blogs.gentoo.org/zmedico/feed/
 avatar = fdb9073dc8f2861ccb1f9cdd7975447d
 location = universe

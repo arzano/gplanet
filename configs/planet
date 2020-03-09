@@ -1,40 +1,40 @@
 [aballier]
 title = aballier
 author = Alexis Ballier
-link = http://aballier.wordpress.com/
-feed = http://aballier.wordpress.com/category/gentoo/feed/atom/
+link = https://aballier.wordpress.com/
+feed = https://aballier.wordpress.com/category/gentoo/feed/atom/
 avatar = bdfe43959b94effb58540b239fc9a312
 location = planet
 
 [ackle]
 title = ackle
 author = Sean Amoss
-link = http://blogs.gentoo.org/ackle/
-feed = http://blogs.gentoo.org/ackle/category/gentoo/feed/
+link = https://blogs.gentoo.org/ackle/
+feed = https://blogs.gentoo.org/ackle/category/gentoo/feed/
 avatar = ae3cdae654daf0394e56a4fc421ecab6
 location = planet
 
 [ago]
 title = ago
 author = Agostino Sarubbo
-link = http://blogs.gentoo.org/ago/
-feed = http://blogs.gentoo.org/ago/category/gentoo/feed/
+link = https://blogs.gentoo.org/ago/
+feed = https://blogs.gentoo.org/ago/category/gentoo/feed/
 avatar = 65812af8273d1c848acd97da072fd9db
 location = planet
 
 [ahenobarbi]
 title = ahenobarbi
 author = Joachim Bartosik
-link = http://ahenobarbi.wordpress.com/
-feed = http://ahenobarbi.wordpress.com/category/planet-gentoo/feed/
+link = https://ahenobarbi.wordpress.com/
+feed = https://ahenobarbi.wordpress.com/category/planet-gentoo/feed/
 avatar = 4da36b48957264e3434a26e7e299bfd1
 location = planet
 
 [alexxy]
 title = alexxy
 author = Alexey Shvetsov
-link = http://blogs.gentoo.org/alexxy/
-feed = http://blogs.gentoo.org/alexxy/category/gentoo/feed/
+link = https://blogs.gentoo.org/alexxy/
+feed = https://blogs.gentoo.org/alexxy/category/gentoo/feed/
 avatar = 5e5770d5a9d7ad9996e317d79d9c34d6
 location = planet
 
@@ -49,8 +49,8 @@ location = planet
 [blueknight]
 title = blueknight
 author = Yury German
-link = http://blogs.gentoo.org/blueknight/
-feed = http://blogs.gentoo.org/blueknight/feed/
+link = https://blogs.gentoo.org/blueknight/
+feed = https://blogs.gentoo.org/blueknight/feed/
 avatar = 7a436d2dda9604564b1da6c0527ea458
 location = planet
 
@@ -65,8 +65,8 @@ location = planet
 [calchan]
 title = calchan
 author = Denis Dupeyron
-link = http://blogs.gentoo.org/calchan/
-feed = http://blogs.gentoo.org/calchan/category/gentoo/feed/
+link = https://blogs.gentoo.org/calchan/
+feed = https://blogs.gentoo.org/calchan/category/gentoo/feed/
 avatar = e63822cc4cd982efe55ef2b380522d06
 location = planet
 
@@ -81,80 +81,80 @@ location = planet
 [cardoe]
 title = cardoe
 author = Doug Goldstein
-link = http://cardoe.wordpress.com/
-feed = http://cardoe.wordpress.com/category/linux/feed/
+link = https://cardoe.wordpress.com/
+feed = https://cardoe.wordpress.com/category/linux/feed/
 avatar = 5e3ed10331dc78ae2f37c9a85df0a1b5
 location = planet
 
 [cazou]
 title = cazou
 author = Detlev Casanova
-link = http://cazou.blogspot.com/
-feed = http://cazou.blogspot.com/feeds/posts/default/-/gentoo
+link = https://cazou.blogspot.com/
+feed = https://cazou.blogspot.com/feeds/posts/default/-/gentoo
 avatar = 94f1ba32282e2a6608f6f291a465051a
 location = planet
 
 [chithanh]
 title = chithanh
 author = Chí-Thanh Christopher Nguyễn
-link = http://chithanh.blogspot.com/
-feed = http://chithanh.blogspot.com/feeds/posts/default/-/linux
+link = https://chithanh.blogspot.com/
+feed = https://chithanh.blogspot.com/feeds/posts/default/-/linux
 avatar = 5a91a3cfe28732970165d95af4120b02
 location = planet
 
 [chutzpah]
 title = chutzpah
 author = Patrick McLean
-link = http://blogs.gentoo.org/chutzpah/
-feed = http://blogs.gentoo.org/chutzpah/category/gentoo/feed/
+link = https://blogs.gentoo.org/chutzpah/
+feed = https://blogs.gentoo.org/chutzpah/category/gentoo/feed/
 avatar = eb761e1047f1416ae3d947448cf92683
 location = planet
 
 [dilfridge]
 title = dilfridge
 author = Andreas K. Hüttel
-link = http://blog.akhuettel.de/
-feed = http://blog.akhuettel.de/feeds/posts/default/-/gentoo
+link = https://dilfridge.blogspot.com/
+feed = https://dilfridge.blogspot.com/feeds/posts/default/-/gentoo
 avatar = 36167de7e11e3b358446823d51e69792
 location = planet
 
 [eras]
 title = eras
 author = Eray Aslan
-link = http://erayaslan.blogspot.com/
-feed = http://erayaslan.blogspot.com/feeds/posts/default/-/gentoo
+link = https://erayaslan.blogspot.com/
+feed = https://erayaslan.blogspot.com/feeds/posts/default/-/gentoo
 avatar = bb700203ebb3cdaf0d0bf65e797445fb
 location = planet
 
 [eva]
 title = eva
 author = Gilles Dartiguelongue
-link = http://blogs.gentoo.org/eva/
-feed = http://blogs.gentoo.org/eva/category/gentoo/feed/
+link = https://blogs.gentoo.org/eva/
+feed = https://blogs.gentoo.org/eva/category/gentoo/feed/
 avatar = bf83f7bea8e7adf103af9a748d5157d6
 location = planet
 
 [floppym]
 title = floppym
 author = Mike Gilbert
-link = http://floppym.blogspot.com/
-feed = http://floppym.blogspot.com/feeds/posts/default/-/gentoo
+link = https://floppym.blogspot.com/
+feed = https://floppym.blogspot.com/feeds/posts/default/-/gentoo
 avatar = 343db2c9bfc4d041109000a3284478c3
 location = planet
 
 [ford_prefect]
 title = ford_prefect
 author = Arun Raghavan
-link = http://arunraghavan.net/
-feed = http://arunraghavan.net/tag/gentoo/feed/
+link = https://arunraghavan.net/
+feed = https://arunraghavan.net/tag/gentoo/feed/
 avatar = 3363059bc3358c080f3d11822f91b8e8
 location = planet
 
-[http://www.gentoo.org/rdf/en/gentoo-news.rdf]
+[https://www.gentoo.org/feeds/news.xml]
 title = GentooNews
 author = Gentoo News
-link = http://www.gentoo.org/rdf/en/gentoo-news.rdf
-feed = http://www.gentoo.org/rdf/en/gentoo-news.rdf
+link = https://www.gentoo.org/feeds/news.xml
+feed = https://www.gentoo.org/feeds/news.xml
 location = planet
 
 #[gokturk]
@@ -168,38 +168,38 @@ location = planet
 [graaff]
 title = graaff
 author = Hans de Graaff
-link = http://moving-innovations.com/blog/
-feed = http://moving-innovations.com/blog/tag/gentoo.rss
+link = https://moving-innovations.com/blog/
+feed = https://moving-innovations.com/blog/tag/gentoo.rss
 avatar = d64a24f0a5393c31fb36e40261686979
 location = planet
 
 [hanno]
 title = hanno
 author = Hanno Böck
-link = http://www.hboeck.de/
-feed = http://www.hboeck.de/feeds/categories/11-Gentoo.rss
+link = https://www.hboeck.de/
+feed = https://www.hboeck.de/feeds/categories/11-Gentoo.rss
 avatar = 5df517f31c46aa6ff491ad966fdf3c9c
 location = planet
 
 [haskell]
 title = haskell
 author = Gentoo Haskell Herd
-link = http://gentoohaskell.wordpress.com/
-feed = http://gentoohaskell.wordpress.com/feed/
+link = https://gentoohaskell.wordpress.com/
+feed = https://gentoohaskell.wordpress.com/feed/
 location = planet
 
 #[hexxeh]
 #title = hexxeh
 #author = Liam McLoughlin
-#link = http://hexxeh.net/?cat=5&feed=
-#feed = http://hexxeh.net/?cat=5&feed=rss2
+#link = https://hexxeh.net/?cat=5&feed=
+#feed = https://hexxeh.net/?cat=5&feed=rss2
 #avatar = 3875538cd5c8cce9e818863760e4b0f2
 #location = planet
 
 [idl0r]
 title = idl0r
 author = Christian Ruppert
-link = http://idl0r.qasl.de/blog/index.php?tempskin=_
+link = https://idl0r.qasl.de/blog/index.php?tempskin=_
 feed = https://idl0r.qasl.de/blog/feeds/gentoo.atom.xml
 avatar = c79f6dbae1252f66be901d958475230f
 location = planet
@@ -207,47 +207,47 @@ location = planet
 [jmbsvicetto]
 title = jmbsvicetto
 author = Jorge Manuel B. S. Vicetto
-link = http://blogs.gentoo.org/jmbsvicetto/
-feed = http://blogs.gentoo.org/jmbsvicetto/category/gentoo/feed/
+link = https://blogs.gentoo.org/jmbsvicetto/
+feed = https://blogs.gentoo.org/jmbsvicetto/category/gentoo/feed/
 avatar = d52f0e8580b6b6c0ef134f1f92a554f7
 location = planet
 
 [johu]
 title = johu
 author = Johannes Huber
-link = http://blogs.gentoo.org/johu/
-feed = http://blogs.gentoo.org/johu/category/gentoo/feed/
+link = https://blogs.gentoo.org/johu/
+feed = https://blogs.gentoo.org/johu/category/gentoo/feed/
 avatar = b1565223f4a62674b032dd4c5c3f6785
 location = planet
 
 [kensington]
 title = kensington
 author = Michael Palimaka
-link = http://blogs.gentoo.org/kensington/
-feed = http://blogs.gentoo.org/kensington/category/gentoo/feed/
+link = https://blogs.gentoo.org/kensington/
+feed = https://blogs.gentoo.org/kensington/category/gentoo/feed/
 avatar = 78597b80d602e2938a22216f76b86b8c
 location = planet
 
 [k_f]
 title = k_f
 author = Kristian Fiskerstrand
-link = http://blog.sumptuouscapital.com/
-feed = http://blog.sumptuouscapital.com/category/gentoo-linux/feed/
+link = https://blog.sumptuouscapital.com/
+feed = https://blog.sumptuouscapital.com/category/gentoo-linux/feed/
 location = planet
 
 [kingtaco]
 title = kingtaco
 author = Mike Doty
-link = http://blogs.gentoo.org/kingtaco/
-feed = http://blogs.gentoo.org/kingtaco/category/gentoo/feed/
+link = https://blogs.gentoo.org/kingtaco/
+feed = https://blogs.gentoo.org/kingtaco/category/gentoo/feed/
 avatar = c903965bacd923432e65d85c71e04d13
 location = planet
 
 [leio]
 title = leio
 author = Mart Raudsepp
-link = http://blogs.gentoo.org/leio/
-feed = http://blogs.gentoo.org/leio/category/gentoo/feed/
+link = https://blogs.gentoo.org/leio/
+feed = https://blogs.gentoo.org/leio/category/gentoo/feed/
 avatar = cce631fa0ea9795887650e81373ea944
 location = planet
 
@@ -262,32 +262,32 @@ location = planet
 [lu_zero]
 title = lu_zero
 author = Luca Barbato
-link = http://blogs.gentoo.org/lu_zero/
-feed = http://blogs.gentoo.org/lu_zero/category/gentoo/feed/
+link = https://blogs.gentoo.org/lu_zero/
+feed = https://blogs.gentoo.org/lu_zero/category/gentoo/feed/
 avatar = 568ad11ab0e853c0e4e8f8ade8bd5278
 location = planet
 
 [marecki]
 title = marecki
 author = Marek Szuba
-link = http://blogs.gentoo.org/marecki/
-feed = http://blogs.gentoo.org/marecki/feed/
+link = https://blogs.gentoo.org/marecki/
+feed = https://blogs.gentoo.org/marecki/feed/
 avatar = f03dc5aaf7da11d68b90f64fd715cae6
 location = planet
 
 [mattst88]
 title = mattst88
 author = Matt Turner
-link = http://mattst88.com/blog/
-feed = http://mattst88.com/blog/rss.php?tag=gentoo
+link = https://mattst88.com/blog/
+feed = https://mattst88.com/blog/rss.php?tag=gentoo
 avatar = 039be336c471acee847c2740efae15c0
 location = planet
 
 [mgorny]
 title = mgorny
 author = Michał Górny
-link = http://blogs.gentoo.org/mgorny/
-feed = http://blogs.gentoo.org/mgorny/category/gentoo/feed/
+link = https://blogs.gentoo.org/mgorny/
+feed = https://blogs.gentoo.org/mgorny/category/gentoo/feed/
 avatar = ff5429ef741b434eb2011692832f810e
 location = planet
 
@@ -301,16 +301,16 @@ location = planet
 #[mpagano]
 #title = mpagano
 #author = Mike Pagano
-#link = http://www.mpagano.com/blog/
-#feed = http://www.mpagano.com/blog/?feed=rss2
+#link = https://www.mpagano.com/blog/
+#feed = https://www.mpagano.com/blog/?feed=rss2
 #avatar = bdfea328a68fbcf028ac72b0d0e87a54
 #location = planet
 
 [nathanzachary]
 title = nathanzachary
 author = Nathan Zachary
-link = http://z-issue.com/wp/
-feed = http://z-issue.com/wp/category/computers/linux/feed/
+link = https://z-issue.com/wp/
+feed = https://z-issue.com/wp/category/computers/linux/feed/
 avatar = e0d47e33ded84d7ef31c2a8c2d312022
 location = planet
 
@@ -333,16 +333,16 @@ location = planet
 [peper]
 title = peper
 author = Piotr Jaroszyński
-link = http://feeds2.feedburner.com/peper-gentoo
-feed = http://feeds2.feedburner.com/peper-gentoo
+link = https://feeds2.feedburner.com/peper-gentoo
+feed = https://feeds2.feedburner.com/peper-gentoo
 avatar = b9e30964c7bbc7633a706ef16a4f57c7
 location = planet
 
 [phosphan]
 title = phosphan
 author = Patrick Kursawe
-link = http://blogs.gentoo.org/phosphan/
-feed = http://blogs.gentoo.org/phosphan/category/gentoo/feed/
+link = https://blogs.gentoo.org/phosphan/
+feed = https://blogs.gentoo.org/phosphan/category/gentoo/feed/
 avatar = 298f8573b66ce178931cd12ce6c6e941
 location = planet
 
@@ -365,57 +365,61 @@ location = planet
 [remi]
 title = remi
 author = Remi Cardona
-link = http://blogs.gentoo.org/remi/
-feed = http://blogs.gentoo.org/remi/category/gentoo/feed/
+link = https://blogs.gentoo.org/remi/
+feed = https://blogs.gentoo.org/remi/category/gentoo/feed/
 avatar = c13d5b50dc0cf902b25075f8e79fe23a
 location = planet
 
 [rich0]
 title = rich0
 author = Richard Freeman
-link = http://rich0gentoo.wordpress.com/
-feed = http://rich0gentoo.wordpress.com/category/gentoo/feed/
+link = https://rich0gentoo.wordpress.com/
+feed = https://rich0gentoo.wordpress.com/category/gentoo/feed/
 avatar = 2e5ed33a99ac2043a6f7c98b01c110d4
 location = planet
 
 [robbat2]
 title = robbat2
 author = Robin Johnson
-link = http://robbat2.livejournal.com/data/
-feed = http://robbat2.livejournal.com/data/rss?tag=gentoo
+link = https://robbat2.livejournal.com/data/
+feed = https://robbat2.livejournal.com/data/rss?tag=gentoo
 avatar = 92acbdd6a6a4ac8239f987f1ee9181b8
 location = planet
 
 [sping]
 title = sping
 author = Sebastian Pipping
-link = http://blog.hartwork.org/
-feed = http://blog.hartwork.org/?feed=rss2&cat=39
+link = https://blog.hartwork.org/
+feed = https://blog.hartwork.org/?feed=rss2&cat=39
 avatar = 432c87ffa36454c734af554bb450189e
 location = planet
 
 [stasibear]
 title = stasibear
 author = Erik Mackdanz
-link = http://very.busted.systems/
-feed = http://very.busted.systems/rss-tag-gentoo.xml
+link = https://very.busted.systems/
+feed = https://very.busted.systems/rss-tag-gentoo.xml
 avatar = 3a1d886a750fd7c30058689d75d8d9ec
 location = planet
 
 #[steev]
 #title = steev
 #author = Steev Klimaszewski
-#link = http://www.steev.net/
-#feed = http://www.steev.net/?feed=rss2&cat=6
+## page is dead
+#link = https://www.steev.net/
+#feed = https://www.steev.net/?feed=rss2&cat=6
 #avatar = e190dfc61c3e3ea459f3d796130f7806
 #location = planet
 
-[swegener]
-title = swegener
-author = Sven Wegener
-link = http://blog.stealer.net/
-feed = http://blog.stealer.net/category/gentoo/feed/
-location = planet
+#
+# disabled due feed not found
+#
+#[swegener]
+#title = swegener
+#author = Sven Wegener
+#link = http://blog.stealer.net/
+#feed = http://blog.stealer.net/category/gentoo/feed/
+#location = planet
 
 [swift]
 title = swift
@@ -425,50 +429,53 @@ feed = http://blog.siphos.be/tag/gentoo/feed/rss.xml
 avatar = a163d8bce08d529a0419c8765766c3b6
 location = planet
 
-[thev00d00]
-title = thev00d00
-author = Ian Whyman
-link = http://v00d00.net/
-feed = http://v00d00.net/tag/gentoo/rss/
-avatar = 8c9d66ff69aeba9d9df3797f0b295029
-location = planet
+#
+# disabled due feed not found
+#
+#[thev00d00]
+#title = thev00d00
+#author = Ian Whyman
+#link = http://v00d00.net/
+#feed = http://v00d00.net/tag/gentoo/rss/
+#avatar = 8c9d66ff69aeba9d9df3797f0b295029
+#location = planet
 
 [titanofold]
 title = titanofold
 author = Aaron W. Swenson
-link = http://blogs.gentoo.org/titanofold/
-feed = http://blogs.gentoo.org/titanofold/category/gentoo/feed/
+link = https://blogs.gentoo.org/titanofold/
+feed = https://blogs.gentoo.org/titanofold/category/gentoo/feed/
 avatar = 8d593f3e223e61615729dc4323926490
 location = planet
 
 [ultrabug]
 title = ultrabug
 author = Alexys Jacob
-link = http://www.ultrabug.fr/
-feed = http://www.ultrabug.fr/tag/gentoo-2/feed/
+link = https://www.ultrabug.fr/
+feed = https://www.ultrabug.fr/tag/gentoo-2/feed/
 avatar = 8a02ec9d317b82419e8c0adf533f92db
 location = planet
 
 [voyageur]
 title = voyageur
 author = Bernard Cafarelli
-link = http://blog.cafarelli.fr/
-feed = http://blog.cafarelli.fr/feed/category/Gentoo/rss2
+link = https://blog.cafarelli.fr/
+feed = https://blog.cafarelli.fr/feed/category/Gentoo/rss2
 avatar = 23b7c03bc5b805fe6fa90e8cf2f1d5c6
 location = planet
 
 [zmedico]
 title = zmedico
 author = Zack Medico
-link = http://blogs.gentoo.org/zmedico/
-feed = http://blogs.gentoo.org/zmedico/category/gentoo/feed/
+link = https://blogs.gentoo.org/zmedico/
+feed = https://blogs.gentoo.org/zmedico/category/gentoo/feed/
 avatar = fdb9073dc8f2861ccb1f9cdd7975447d
 location = planet
 
 [zx2c4]
 title = zx2c4
 author = Jason A. Donenfeld
-link = http://blog.zx2c4.com/planetgentoo
-feed = http://blog.zx2c4.com/planetgentoo
+link = https://blog.zx2c4.com/planetgentoo
+feed = https://blog.zx2c4.com/planetgentoo
 avatar = eb96264a0212404d9bfa56da24c64843
 location = planet
