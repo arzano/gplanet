@@ -331,8 +331,8 @@ location = universe
 [rafaelmartins_universe]
 title = rafaelmartins
 author = Rafael G. Martins
-link = http://feeds.rgm.io/rafaelmartins.xml
-feed = http://feeds.rgm.io/rafaelmartins.xml
+link = https://rgm.io/
+feed = https://rgm.io/atom/
 avatar = d9ac8d426c34c0b556b5ce4de3d3df23
 location = universe
 
