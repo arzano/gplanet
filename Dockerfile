@@ -19,6 +19,10 @@ RUN bundle install \
     && npm install \
     && npm run dist
 
+# planet has to be last
+RUN echo "title = Planet Gentoo\n" > planet.ini \
+    && cat configs/universe configs/planet >> planet.ini
+
 CMD cd /var/www/planet.gentoo.org \
     && bundle exec pluto update -d data \
     && bundle exec pluto build -o build -d data -t tyrian
