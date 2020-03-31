@@ -298,13 +298,13 @@ link = https://blogs.gentoo.org/miniconf-2016/
 feed = https://blogs.gentoo.org/miniconf-2016/feed/
 location = planet
 
-#[mpagano]
-#title = mpagano
-#author = Mike Pagano
-#link = https://www.mpagano.com/blog/
-#feed = https://www.mpagano.com/blog/?feed=rss2
-#avatar = bdfea328a68fbcf028ac72b0d0e87a54
-#location = planet
+[mpagano]
+title = mpagano
+author = Mike Pagano
+link = https://www.mpagano.com/blog/
+feed = https://www.mpagano.com/blog/?feed=rss2
+avatar = bdfea328a68fbcf028ac72b0d0e87a54
+location = planet
 
 [nathanzachary]
 title = nathanzachary
